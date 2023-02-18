@@ -1,0 +1,142 @@
+{
+  "id": "c07f7af4-51f9-4864-bff4-45bce3bb6b3b",
+  "version": "2.0",
+  "name": "demoblaze",
+  "url": "https://www.demoblaze.com/",
+  "tests": [{
+    "id": "32119424-3bb7-48b1-939f-73761851451d",
+    "name": "Buying a laptop",
+    "commands": [{
+      "id": "628f0b24-d3c9-4ba8-882c-7e563d3f60e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c912566-1cf1-4d6c-8a67-da143b391dfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1281x780",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09e2741a-0d38-4e27-8f0f-a5c315564549",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Laptops",
+      "targets": [
+        ["linkText=Laptops", "linkText"],
+        ["xpath=//a[contains(text(),'Laptops')]", "xpath:link"],
+        ["xpath=(//a[@id='itemc'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='contcont']/div/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[10]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Laptops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78894826-f409-403e-acf0-4c3c8a8d9f33",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-4:nth-child(6) .card-img-top",
+      "targets": [
+        ["css=.col-lg-4:nth-child(6) .card-img-top", "css:finder"],
+        ["xpath=//div[@id='tbodyid']/div[6]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[6]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cda938d-9681-45d8-90f2-10eb5d889c08",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add to cart",
+      "targets": [
+        ["linkText=Add to cart", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to cart')]", "xpath:link"],
+        ["xpath=//a[@onclick='addToCart(15)']", "xpath:attributes"],
+        ["xpath=//div[@id='tbodyid']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3302815f-8ca4-4577-bdf6-347cc5ff5224",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Product added",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0996fe46-c71c-4e50-90b6-13d637a90e18",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartur",
+      "targets": [
+        ["id=cartur", "id"],
+        ["linkText=Cart", "linkText"],
+        ["css=#cartur", "css:finder"],
+        ["xpath=//a[contains(text(),'Cart')]", "xpath:link"],
+        ["xpath=//a[@id='cartur']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarExample']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'cart.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d92729c6-dcf3-4fd3-8ef6-5546f61aab1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='button'])[30]", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Place Order')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6c88de9-10e1-467d-9650-695b3d4b4216",
+      "comment": "",
+      "command": "click",
+      "target": "css=#orderModal .btn-secondary",
+      "targets": [
+        ["css=#orderModal .btn-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='orderModal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42057d23-f2ae-4935-b27e-5c12f8c53c06",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Delete",
+      "targets": [
+        ["linkText=Delete", "linkText"],
+        ["css=td > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Delete')]", "xpath:link"],
+        ["xpath=//a[@onclick=\"deleteItem('b880baff-cbd5-597f-e27b-665d6150ad3d')\"]", "xpath:attributes"],
+        ["xpath=//tbody[@id='tbodyid']/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f4984399-43e3-4f55-b9b4-92dd704478f8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["32119424-3bb7-48b1-939f-73761851451d"]
+  }],
+  "urls": ["https://www.demoblaze.com/"],
+  "plugins": []
+}

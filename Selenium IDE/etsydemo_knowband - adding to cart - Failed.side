@@ -1,0 +1,224 @@
+{
+  "id": "f4cf8b04-edff-4adb-8994-d824b6b56e0b",
+  "version": "2.0",
+  "name": "etsydemo_knowband - adding to cart",
+  "url": "https://etsydemo.knowband.com/en/",
+  "tests": [{
+    "id": "ceea5b2c-f864-4822-9164-23134d1baa00",
+    "name": "adding to cart",
+    "commands": [{
+      "id": "d1186a59-17cb-4acf-85b9-4dc351a504d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://etsydemo.knowband.com/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3a876a2-c9f1-4a2b-baa3-759685debda9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1690x989",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8fbcec92-56d6-434d-8f08-c112b610fc1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hovered .replace-2x",
+      "targets": [
+        ["css=.hovered .replace-2x", "css:finder"],
+        ["xpath=(//img[@alt='Printed Dress'])[2]", "xpath:img"],
+        ["xpath=//ul[@id='homefeatured']/li[2]/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f25fe54-3ca3-4558-8843-55aba9c6d70c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5326d1e0-5c2f-4959-a518-c42412632f14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.continue > span",
+      "targets": [
+        ["css=.continue > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d697a9d-080c-42eb-b19d-4fee60ebc392",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover > .sf-with-ul",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul", "css:finder"],
+        ["xpath=(//a[contains(text(),'T-shirts')])[2]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://etsydemo.knowband.com/en/5-tshirts')])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22bbf1a6-a458-423e-9d48-69396c811466",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product_img_link > .replace-2x",
+      "targets": [
+        ["css=.product_img_link > .replace-2x", "css:finder"],
+        ["xpath=(//img[@alt='PR01SC01P1'])[2]", "xpath:img"],
+        ["xpath=//ul[@id='product_list']/li/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//li/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42bc16b5-d172-413d-991b-a0837146c4a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd4dc88b-5c58-4374-8ef9-8c9770225c4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.continue > span",
+      "targets": [
+        ["css=.continue > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec8090d2-f581-4572-8347-845720ba2a68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover > .sf-with-ul",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul", "css:finder"],
+        ["xpath=(//a[contains(text(),'Dresses')])[5]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://etsydemo.knowband.com/en/8-dresses')])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24028581-fe4f-45c6-85af-0893af4cdaf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax_block_product:nth-child(5) .button:nth-child(1) > span",
+      "targets": [
+        ["css=.ajax_block_product:nth-child(5) .button:nth-child(1) > span", "css:finder"],
+        ["xpath=//ul[@id='product_list']/li[5]/div/div[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[5]/div/div[2]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a03879ca-57d5-4cf0-b4c1-89b9aeab8610",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Add to cart",
+      "targets": [
+        ["linkText=Add to cart", "linkText"],
+        ["css=.hovered .ajax_add_to_cart_button", "css:finder"],
+        ["xpath=//ul[@id='product_list']/li[5]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://etsydemo.knowband.com/en/cart?add=1&id_product=38&ipa=49&token=ec29d362c2a67bbfe0510e72ad22bd27')]", "xpath:href"],
+        ["xpath=//li[5]/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61d22720-b55c-4c98-89f5-a98479124669",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Add to cart",
+      "targets": [
+        ["linkText=Add to cart", "linkText"],
+        ["css=.hovered .ajax_add_to_cart_button", "css:finder"],
+        ["xpath=//ul[@id='product_list']/li[5]/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://etsydemo.knowband.com/en/cart?add=1&id_product=38&ipa=49&token=ec29d362c2a67bbfe0510e72ad22bd27')]", "xpath:href"],
+        ["xpath=//li[5]/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d2cc27d-ed4e-4922-9b69-1a02425c72c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-medium:nth-child(2) > span",
+      "targets": [
+        ["css=.button-medium:nth-child(2) > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Proceed to checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d90ac4ba-8d57-4013-8697-962185bf29e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cart_quantity_up_38_49_0_0 .icon-plus",
+      "targets": [
+        ["css=#cart_quantity_up_38_49_0_0 .icon-plus", "css:finder"],
+        ["xpath=//a[@id='cart_quantity_up_38_49_0_0']/span/i", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[5]/div/a[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43db6cd5-708a-4184-9b1c-5f811fcd441e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cart_quantity_up_38_49_0_0 .icon-plus",
+      "targets": [
+        ["css=#cart_quantity_up_38_49_0_0 .icon-plus", "css:finder"],
+        ["xpath=//a[@id='cart_quantity_up_38_49_0_0']/span/i", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[5]/div/a[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c53eddd9-b735-41df-af74-bc435b518cea",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\33 7_46_0_0 > .icon-trash",
+      "targets": [
+        ["css=#\\33 7_46_0_0 > .icon-trash", "css:finder"],
+        ["xpath=//a[@id='37_46_0_0']/i", "xpath:idRelative"],
+        ["xpath=//td[6]/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "323ea7d2-e318-45cd-9252-2983fd8a440e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.standard-checkout > span",
+      "targets": [
+        ["css=.standard-checkout > span", "css:finder"],
+        ["xpath=//div[@id='center_column']/p[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6692c167-2bac-43a9-9827-373db61f98cf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ceea5b2c-f864-4822-9164-23134d1baa00"]
+  }],
+  "urls": ["https://etsydemo.knowband.com/en/"],
+  "plugins": []
+}

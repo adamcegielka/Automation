@@ -1,0 +1,98 @@
+{
+  "id": "b26eddfd-251c-4851-86a4-f15fa54efbb9",
+  "version": "2.0",
+  "name": "My First Project",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "6a3b9f6b-8fcc-4b2f-81c2-a7ac877195c6",
+    "name": "Testowanie wyszukiwarki Google",
+    "commands": [{
+      "id": "01137ea4-d5c0-47e4-8039-4ac78223d5c0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dd63827-17d2-4fcf-9252-bb4294977c23",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1482x942",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "259ff0c9-935a-4406-92fe-3276db778801",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffd115c6-1f5f-4ff1-b020-7c75b2943ca6",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testowanie automatyczne"
+    }, {
+      "id": "f0781d29-a243-4ae4-a3e4-b549ef105f4e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "67af7ea7-c485-492e-bcaf-f7c2856e32a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.uEierd:nth-child(3) .CCgQ5 > span",
+      "targets": [
+        ["css=.uEierd:nth-child(3) .CCgQ5 > span", "css:finder"],
+        ["xpath=//div[@id='tads']/div/div/div/div/div/a/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/a/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Testy automatyczne - Automatyzacja Testów')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43dfc231-9fd2-4578-a051-8cfcc93d8b96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Testy",
+      "targets": [
+        ["linkText=Testy", "linkText"],
+        ["css=.styles__LeftSide-sc-4mpc2n-3 .styles__InternalLink-sc-1vojtak-0:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Testy')]", "xpath:link"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/header/nav/div/ul/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pl/testy')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Testy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3a462866-f285-4f80-a280-c33fae0d366f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6a3b9f6b-8fcc-4b2f-81c2-a7ac877195c6"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

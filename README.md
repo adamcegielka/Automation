@@ -1,14 +1,14 @@
-# Automatic Tests
+## Automation
 Here I post my performance and automate tests
 
-## JMeter
+### JMeter
 > My performance testing exercises
 
-## Selenium IDE
+### Selenium IDE
 > My testing exercises using Selenium IDE
 
-## Selenium WebDriver
+### Selenium WebDriver
 > My web application test automation exercise
 
-## Tests BDD
+### Tests BDD
 > My testing exercises in the BDD methodology

@@ -26,11 +26,11 @@
 ➝  run tests with browser GUI:
 
 ```sh
- nnpx playwright test --headed 
+ npx playwright test --headed 
 ```
 
 ➝  view report:
 
-```vsc
+```sh
  npx playwright show-report 
 ```

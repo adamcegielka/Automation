@@ -1,6 +1,9 @@
 ## Automation
 Here I post my performance and automate tests
 
+### Playwright
+> My exercises in automatic test lessons from jaktestowac.pl
+
 ### JMeter
 > My performance testing exercises
 

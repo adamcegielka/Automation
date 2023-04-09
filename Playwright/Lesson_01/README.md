@@ -34,3 +34,18 @@
 ```sh
  npx playwright show-report 
 ```
+
+### Assertions:
+
+```sh
+await expect(page.getByTestId('user-name')).toHaveText('Jan Demobankowy');
+```
+
+### Modification:
+
+```sh
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
+```

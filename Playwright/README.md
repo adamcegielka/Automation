@@ -1,3 +1,9 @@
+# 🎭 Playwright
+
+### [Documentation](https://playwright.dev) | [API reference](https://playwright.dev/docs/api/class-playwright)
+
+[Repository Playwright](https://github.com/microsoft/playwright)
+
 ## Learning automatic tests in Playwright with jaktestowac.pl
 
 - Course from the [jaktestowac.pl](https://jaktestowac.pl/course/playwright-wprowadzenie/) <br>

@@ -2,51 +2,51 @@
 
 ➝  check `NodeJS` version:
 
-```sh
+```Shell
  node -v 
 ```
 ➝  new project with `Playwright`:
 
-```sh
+```Shell
  npm init playwright@latest
 ```
 
 ➝  record tests for given site:
 
-```sh
+```Shell
  npx playwright codegen https://demo-bank.vercel.app/ 
 ```
 
 ➝  run tests without browser GUI:
 
-```sh
+```Shell
  npx playwright test 
 ```
 
 ➝  run tests with browser GUI:
 
-```sh
+```Shell
  npx playwright test --headed 
 ```
 
 ➝  view report:
 
-```sh
+```Shell
  npx playwright show-report 
 ```
 
 ### Assertions:
 
-```sh
+```TypeScript
 await expect(page.getByTestId('user-name')).toHaveText('Jan Demobankowy');
 ```
 
 ### Modification:
 
 - config file: `playwright.config.ts`
-- disable browsers: `Safari`
+- disable browsers: **WebKit**
 
-```javascript
+```TypeScript
 // {
 //   name: 'webkit',
 //   use: { ...devices['Desktop Safari'] },

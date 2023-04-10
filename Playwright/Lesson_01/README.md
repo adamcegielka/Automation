@@ -2,42 +2,42 @@
 
 ➝  check `NodeJS` version:
 
-```VSCode
+```sh
  node -v 
 ```
 ➝  new project with `Playwright`:
 
-```VSCode
+```sh
  npm init playwright@latest
 ```
 
 ➝  record tests for given site:
 
-```VSCode
+```sh
  npx playwright codegen https://demo-bank.vercel.app/ 
 ```
 
 ➝  run tests without browser GUI:
 
-```VSCode
+```sh
  npx playwright test 
 ```
 
 ➝  run tests with browser GUI:
 
-```VSCode
+```sh
  npx playwright test --headed 
 ```
 
 ➝  view report:
 
-```VSCode
+```sh
  npx playwright show-report 
 ```
 
 ### Assertions:
 
-```VSCode
+```sh
 await expect(page.getByTestId('user-name')).toHaveText('Jan Demobankowy');
 ```
 
@@ -47,8 +47,8 @@ await expect(page.getByTestId('user-name')).toHaveText('Jan Demobankowy');
 - disable browsers: `Safari`
 
 ```javascript
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+// {
+//   name: 'webkit',
+//   use: { ...devices['Desktop Safari'] },
+// },
 ```

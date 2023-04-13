@@ -3,7 +3,9 @@
 
 ## Tips for VSC
 > SHIFT + ALT + ↓/↑ -> copy line up/down  
-> SHIFT + CTRL + K -> delete line
+> SHIFT + CTRL + K -> delete line  
+> CTRL + F -> find
+> CTRL + B -> left sidebar
 
 ## What was done in the lesson #4
 -> Adding a new test to desktop.spec.ts  

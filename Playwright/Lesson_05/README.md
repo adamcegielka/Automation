@@ -27,8 +27,9 @@
 
 <br>
 
-### Refactored code:
+### What has been refactored:
 ```TypeScript
+    // Arrang
     const url = 'https://demo-bank.vercel.app/';
     const userId = 'testyAdi';
     const userPassword = '87654321';
@@ -38,6 +39,7 @@
     const transferTitle = 'Zwrot kasy';
     const expectedTransferReceiver = 'Chuck Demobankowy';
 
+    // Act
     await page.goto(url);
     await page.getByTestId('login-input').fill(userId);
     await page.getByTestId('password-input').fill(userPassword);
@@ -46,6 +48,7 @@
     await page.locator('#widget_1_transfer_amount').fill(transferAmount);
     await page.locator('#widget_1_transfer_title').fill(transferTitle);
 
+    // Assert
     await expect(page.locator('#show_messages')).toHaveText(`Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`);
 ```
 
@@ -53,35 +56,35 @@
 
 ➝  check `NodeJS` version:
 
-```Shell
+```sh
  node -v 
 ```
 ➝  new project with `Playwright`:
 
-```Shell
+```sh
  npm init playwright@latest
 ```
 
 ➝  record tests for given site:
 
-```Shell
+```sh
  npx playwright codegen https://demo-bank.vercel.app/ 
 ```
 
 ➝  run tests without browser GUI:
 
-```Shell
+```sh
  npx playwright test 
 ```
 
 ➝  run tests with browser GUI:
 
-```sv
+```sh
  npx playwright test --headed 
 ```
 
 ➝  view report:
 
-```Shell
+```sh
  npx playwright show-report 
 ```

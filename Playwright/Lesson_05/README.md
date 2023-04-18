@@ -8,18 +8,18 @@
 - `CTRL + F` -> find  
 - `CTRL + B` -> left sidebar  
 - `CTRL + SHIFT + R` -> Refactor ...
-- `SHIFT + ALT + F` code formatting
-- `CTRL + SPACE` suggestions
+- `SHIFT + ALT + F` -> code formatting
+- `CTRL + SPACE` -> suggestions
  
-## What was done in the lesson #4 
-- Code refactoring:
+## What was done in the lesson #5 
+- Code refactoring:  
 -> Inserting a variable into a string `Text ${ }`   
 - Project versioning with Git [Lesson](https://jaktestowac.pl/lesson/pw1sb01l05/) :  
 -> Setting email for Git user `git config --global user.email "youremail@example.com"`  
 -> Setting name for Git user: `git config --global user.name "your name"`  
 -> Installation of the **GitLens** extension to VSC
 - Updating the playwright package and browsers [Lesson](https://jaktestowac.pl/lesson/pw1sb01l02/) :  
--> Checking the current version of Playwrigth (package.json) `npx @playwright/test --version` 
+-> Checking the current version of Playwrigth (package.json) `npx @playwright/test --version`  
 -> Checking the latest version of Playwrigth `npm outdated @playwright/test`  
 -> Playwright update `npm i @playwright/test`  
 -> Path to the browsers directory: `%USERPROFILE%\AppData\Local\ms-playwright`  
@@ -27,23 +27,26 @@
 
 <br>
 
-### Code test:
+### Refactored code:
 ```TypeScript
-test.only('successful mobile phone top-up', async ({ page }) => {
-          await page.goto('https://demo-bank.vercel.app/');
-          await page.getByTestId('login-input').fill('testyAdi');
-          await page.getByTestId('password-input').fill('password');
-          await page.getByTestId('login-button').click();
+    const url = 'https://demo-bank.vercel.app/';
+    const userId = 'testyAdi';
+    const userPassword = '87654321';
+    
+    const receiverId = '2';
+    const transferAmount = '150';
+    const transferTitle = 'Zwrot kasy';
+    const expectedTransferReceiver = 'Chuck Demobankowy';
 
-          await page.locator('#widget_1_topup_receiver').selectOption('502 xxx xxx');
-          await page.locator('#widget_1_topup_amount').fill('90');
-          await page.locator('#uniform-widget_1_topup_agreement span').click();
-          await page.getByRole('button', { name: 'doładuj telefon' }).click();
-          await page.getByTestId('close-button').click();
-          // await page.getByRole('link', { name: 'Doładowanie wykonane! 90,00PLN na numer 502 xxx xxx' }).click();
-  
-          await expect(page.locator('#show_messages')).toHaveText('Doładowanie wykonane! 90,00PLN na numer 502 xxx xxx');
-        });
+    await page.goto(url);
+    await page.getByTestId('login-input').fill(userId);
+    await page.getByTestId('password-input').fill(userPassword);
+
+    await page.locator('#widget_1_transfer_receiver').selectOption(receiverId);
+    await page.locator('#widget_1_transfer_amount').fill(transferAmount);
+    await page.locator('#widget_1_transfer_title').fill(transferTitle);
+
+    await expect(page.locator('#show_messages')).toHaveText(`Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`);
 ```
 
 ### Commands Playwright
@@ -73,7 +76,7 @@ test.only('successful mobile phone top-up', async ({ page }) => {
 
 ➝  run tests with browser GUI:
 
-```Shell
+```sv
  npx playwright test --headed 
 ```
 

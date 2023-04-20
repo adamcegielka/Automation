@@ -8,7 +8,7 @@ My exercises in automatic test lessons from udemy [Cypress od podstaw - Automaty
 My exercises in automatic test lessons from [jaktestowac.pl](https://jaktestowac.pl/)
 <br><br>
 ![Selenium](https://img.shields.io/badge/-Selenium-3776AB?style=flat&logo=Selenium&logoColor=white)  
-My exercises in automatic test lessons from udemy [Kurs Selenium Java od podstaw](https://www.udemy.com/course/kurs-selenium-java/)
+My exercises in automated testing from the course on SDAcademy and test lessons from Udemy [Kurs Selenium Java od podstaw](https://www.udemy.com/course/kurs-selenium-java/)
 <br><br>
 ![BDD](https://img.shields.io/badge/-BDD-3776AB?style=flat&logo=BDD&logoColor=white)  
 My testing exercises in the BDD methodology

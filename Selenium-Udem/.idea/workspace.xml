@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eff1bf94-5f06-4956-9be8-03c77158164a" name="Changes" comment="🔧 Selenium, environment preparation" />
+    <list default="true" id="eff1bf94-5f06-4956-9be8-03c77158164a" name="Changes" comment="🔧 Editing file .gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682096371123</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="🔧 Editing file .gitignore">
+      <created>1682097720690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682097720690</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" Selenium configuration" />
     <MESSAGE value=" Selenium, environment preparation" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Selenium, environment preparation" />
+    <MESSAGE value=" Editing file .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Editing file .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,8 +1,7 @@
-# 🎭 Playwright
+[![Playwright.dev](https://img.shields.io/badge/Documentation-Playwright-45ba4b.svg)](https://playwright.dev/docs/intro)  [![Playwright.dev](https://img.shields.io/badge/API%20reference-Playwright-D0422C.svg)](https://playwright.dev/docs/api/class-playwright)   [![Node.js](https://img.shields.io/badge/download-Node.js-026e00.svg)](https://nodejs.org/) 
+<br>
 
-### [Documentation](https://playwright.dev) | [API reference](https://playwright.dev/docs/api/class-playwright)
-
-[Repository Playwright](https://github.com/microsoft/playwright)
+### [Repository Playwright](https://github.com/microsoft/playwright)
 
 ## Learning automatic tests in Playwright with jaktestowac.pl
 

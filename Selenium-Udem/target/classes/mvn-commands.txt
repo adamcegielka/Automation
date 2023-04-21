@@ -1,6 +1,0 @@
-Fazy tworzenie i dystrybucji projetu:
-
-1. - mvn compile   =>  kompiluje kod źródłowy
-2. - mvn test      =>  uruchamia testy
-3. - mvn package   =>  pakuje kod np. do jara
-4. - mvn install   =>  instalacja paczki do naszego lokanego repo

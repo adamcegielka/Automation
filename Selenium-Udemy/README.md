@@ -3,11 +3,11 @@
 
 ## Learning automatic tests in Selenium with udemy
 
+- Development environment [IntelliJ IDEA](https://www.jetbrains.com/help/idea/getting-started.html)
 - Course from the [Udemy - Kurs Selenium Java od podstaw
 ](https://www.udemy.com/course/kurs-selenium-java/) 
-- Installed [JDK 17 LTS](https://www.oracle.com/pl/java/technologies/downloads/#java17) | [JDK 20](https://www.oracle.com/pl/java/technologies/downloads/#java20)
-- Development environment [IntelliJ IDEA](https://www.jetbrains.com/help/idea/getting-started.html) 
-- Automation tool [Maven](https://maven.apache.org/download.cgi)
+- Installed [JDK 17 LTS](https://www.oracle.com/pl/java/technologies/downloads/#java17) 
+- Binary zip archive [Apache Maven 3.9.1](https://maven.apache.org/download.cgi) 
 - Maven Repository [MVNRepository](https://mvnrepository.com/)
 
 ## Tips for IntelliJ IDEA:

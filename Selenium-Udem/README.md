@@ -1,4 +1,6 @@
-[![Selenium.dev](https://img.shields.io/badge/tested%20with-Selenium-43b02a.svg)](https://www.selenium.dev/)  [![Maven Repository](https://img.shields.io/badge/Search/Browse/Explore-Maven%20Repository-276bc0.svg)](https://mvnrepository.com/) 
+[![Selenium.dev](https://img.shields.io/badge/tested%20with-Selenium-43b02a.svg?logo=selenium)](https://www.selenium.dev/) 
+[![Maven Repository](https://img.shields.io/badge/Search/Browse/Explore-Maven%20Repository-276bc0.svg)](https://mvnrepository.com/) 
+[![Support badge](https://img.shields.io/badge/stackoverflow-webdrivermanager_java-green.svg?logo=stackoverflow)](https://stackoverflow.com/questions/tagged/webdrivermanager-java)
 <br>
 
 ## Learning automatic tests in Selenium with udemy
@@ -12,6 +14,7 @@
 - WebDriver for Firefox [geckodriver-v0.33.0-win-aarch64
   ](https://github.com/mozilla/geckodriver/releases)
 - Internet Explorer Driver Server [64 bit Windows IE](https://www.selenium.dev/downloads/)
+- Selenium WebDriver [WebDriverManager](https://github.com/bonigarcia/webdrivermanager)
 
 ## Tips for IntelliJ IDEA:
 :small_orange_diamond: `SHIFT + F10` : run  

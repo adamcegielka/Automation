@@ -1,0 +1,13 @@
+### Zwiększenie okna wyszukiwarki i zmniejszenie do określonej wielkości:
+
+    @Test
+    public void openGooglePage() {
+        WebDriver driver = getDriver("chrome");
+
+        driver.manage().window().maximize();                // max
+
+        Dimension windoSize = new Dimension(600,500);       // do ustawień
+        driver.manage().window().setSize(windoSize);
+    }
+
+###

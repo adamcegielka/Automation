@@ -8,7 +8,10 @@
 ](https://www.udemy.com/course/kurs-selenium-java/) 
 - Installed [JDK 17 LTS](https://www.oracle.com/pl/java/technologies/downloads/#java17) 
 - Binary zip archive [Apache Maven 3.9.1](https://maven.apache.org/download.cgi) 
-- Maven Repository [MVNRepository](https://mvnrepository.com/)
+- ChromeDriver [chromedriver_112_win32](https://chromedriver.chromium.org/downloads)
+- WebDriver for Firefox [geckodriver-v0.33.0-win-aarch64
+  ](https://github.com/mozilla/geckodriver/releases)
+- Internet Explorer Driver Server [64 bit Windows IE](https://www.selenium.dev/downloads/)
 
 ## Tips for IntelliJ IDEA:
 :small_orange_diamond: `SHIFT + F10` : run  

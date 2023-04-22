@@ -10,7 +10,7 @@ public class WebDriverManagerTest {
         WebDriver driver = new ChromeDriver();
     }
 
-
+    // to be pushed into the pom.xml file:
     <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>

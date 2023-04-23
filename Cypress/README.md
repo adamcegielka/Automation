@@ -21,5 +21,15 @@ npm init
 
 - Course from the [udemy - Cypress od podstaw - Automatyzacja testów](https://www.udemy.com/course/cypress-od-podstaw/) 
 - Tested site [practice.automationtesting](https://practice.automationtesting.in/) 
-- Software [VSCode](https://code.visualstudio.com/) 
+- Software [Visual Studio Code](https://code.visualstudio.com/) 
 - Programming language [JavaScript](https://devdocs.io/javascript/)
+
+## Tips for Visual Studio Code:
+:small_orange_diamond: `SHIFT + ALT + ↓/↑` : copy line up/down  
+:small_orange_diamond: `ALT + ↓/↑` : moving the whole line  
+:small_orange_diamond: `SHIFT + CTRL + K` : delete line  
+:small_orange_diamond: `CTRL + F` : find  
+:small_orange_diamond: `CTRL + B` : left sidebar  
+:small_orange_diamond: `CTRL + SHIFT + R` : Refactor ...  
+:small_orange_diamond: `SHIFT + ALT + F` : code formatting  
+:small_orange_diamond: `CTRL + SPACE` : suggestions  

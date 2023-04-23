@@ -11,7 +11,7 @@
 - Course from the [jaktestowac.pl](https://jaktestowac.pl/course/playwright-wprowadzenie/) <br>
 - Tested site [demo-bank](https://demo-bank.vercel.app/) <br>
 - Software [VSCode](https://code.visualstudio.com/) <br>
-- Programming language [TypeScript](https://www.typescriptlang.org/) )
+- Programming language [TypeScript](https://www.typescriptlang.org/) 
 
 ## Tips for Visual Studio Code:
 :small_orange_diamond: `SHIFT + ALT + ↓/↑` : copy line up/down  

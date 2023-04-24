@@ -1,0 +1,20 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Testy automatyczne Cypress",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "testy",
+    "automatyczne",
+    "kurs"
+  ],
+  "author": "Adam Cegielka",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.10.0"
+  }
+}

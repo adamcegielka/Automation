@@ -12,10 +12,31 @@
 node --version
 ```
 
-- Installing
+- Installing:
 ```TypeScript
 npm init
+npm install cypress --save-dev
 ```
+
+- Launching: 
+```TypeScript
+npx cypress open
+```
+
+- `package.json` -> Script configuration:
+```TypeScript
+"scripts": {
+    "open": "npx cypress open"
+  },
+
+  Terminal: npmrun open
+```
+
+- `cypress.json` -> Test settings
+
+- `fixtures/example.json` -> Storage of permanent types
+
+<br>  
 
 ## Learning automatic tests in Cypress with udemy
 

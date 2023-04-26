@@ -5,6 +5,12 @@
 ### [Documentation](https://docs.cypress.io/guides/getting-started/installing-cypress) | [API reference](https://docs.cypress.io/api/table-of-contents) | [Repository Cypress](https://github.com/cypress-io)
 <br>
 
+## Learning automatic tests in Cypress with udemy
+
+- Course from the [udemy - Cypress od podstaw - Automatyzacja testów](https://www.udemy.com/course/cypress-od-podstaw/) 
+- Tested site [etsydemo.knowband](https://etsydemo.knowband.com/en/) 
+- Software [Visual Studio Code](https://code.visualstudio.com/) 
+- Programming language [JavaScript](https://devdocs.io/javascript/)
 
 ## Configuration
 - Checking node.js version
@@ -29,7 +35,7 @@ npx cypress open
     "open": "npx cypress open"
   },
 
-  Terminal: npmrun open
+  Terminal: npm run open
 ```
 
 - `cypress.json` -> Test settings
@@ -37,13 +43,6 @@ npx cypress open
 - `fixtures/example.json` -> Storage of permanent types
 
 <br>  
-
-## Learning automatic tests in Cypress with udemy
-
-- Course from the [udemy - Cypress od podstaw - Automatyzacja testów](https://www.udemy.com/course/cypress-od-podstaw/) 
-- Tested site [practice.automationtesting](https://practice.automationtesting.in/) 
-- Software [Visual Studio Code](https://code.visualstudio.com/) 
-- Programming language [JavaScript](https://devdocs.io/javascript/)
 
 ## Tips for Visual Studio Code:
 :small_orange_diamond: `SHIFT + ALT + ↓/↑` : copy line up/down  

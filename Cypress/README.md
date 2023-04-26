@@ -35,12 +35,33 @@ npx cypress open
     "open": "npx cypress open"
   },
 
-  Terminal: npm run open
+ Terminal: npm run open
 ```
 
 - `cypress.json` -> Test settings
 
 - `fixtures/example.json` -> Storage of permanent types
+
+- `cypress.config.js` -> Configuration File:
+```TypeScript
+    baseUrl: 'https://etsydemo.knowband.com/en',
+    includeShadowDom: true,
+    chromeWebSecurity: true,
+    viewportHeight: 1080,
+    viewportWidth: 1920
+```
+
+- Template:
+```TypeScript
+/// <reference types="cypress" />
+
+describe("Name of test section", () => {
+    it("Name of test", () => {
+      cy.get('').type('')
+      cy.get('').click()
+    })
+})
+```
 
 <br>  
 

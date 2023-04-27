@@ -6,30 +6,33 @@
  
 ## What was done in the lesson S02L03
 - Updating the playwright package and browsers:  
--> Checking the current version of Playwrigth (package.json) `npx @playwright/test --version`  
--> Playwright upgrade to Version 1.33.0 `npm i @playwright/test`  
--> Installing new versions of browsers `npx playwright install` 
-- Prettier:  
--> Installation `npm install --save-dev --save-exact prettier`  
--> Starting formatting with Prettier `npx prettier --write .`  
--> Ignoring files in [Prettier](https://prettier.io/docs/en/options.html):  
+-> Checking the current version of Playwrigth (package.json): `npx @playwright/test --version`  
+-> Playwright upgrade to Version 1.33.0: `npm i @playwright/test`  
+-> Installing new versions of browsers: `npx playwright install` 
 
-.prettierignore file
+- Install Prettier: `npm install --save-dev --save-exact prettier` 
+
+- exlude files in: `.prettierignore`
 ```TypeScript
 package-lock.json
+package.json
 playwright-report
+README.md
 ```  
 
-Adding the file to project: `.prettierrc.json`
+- set rules in: `.prettierrc.json`
 ```TypeScript
 {
     "singleQuote": true
 }
-```
+```  
+- run Prettier: `npx prettier --write .`  
+
+- More about the format options [Prettier](https://prettier.io/docs/en/options.html)
 
 <br>
 
-## Tips for VSC
+## Tips for VSCode
 - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>↓/↑</kbd> -> copy line up/down 
 - <kbd>ALT</kbd> + <kbd>↓/↑</kbd> -> moving the whole line 
 - <kbd>SHIFT</kbd> + <kbd>CTRL</kbd> + <kbd>K</kbd> -> delete line  
@@ -38,42 +41,27 @@ Adding the file to project: `.prettierrc.json`
 - <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>R</kbd> -> Refactor ...
 - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>F</kbd> -> code formatting
 - <kbd>CTRL</kbd> + <kbd>SPACE</kbd> -> suggestions
+- <kbd>CTRL</kbd> + <kbd>C</kbd> -> cancelling Node process: hit twice
 
 <br>
 
 ## Commands Playwright
 
-➝  check `NodeJS` version:
+➝  check **NodeJS** version: `node -v`  
+➝  new project with **Playwright**: `npm init playwright@latest`  
+➝  record tests for given site: `npx playwright codegen https://demo-bank.vercel.app/`  
+➝  run tests without browser GUI: `npx playwright test`  
+➝  run tests with browser GUI: `npx playwright test --headed`  
+➝  view report: `npx playwright show-report`  
 
-```sh
- node -v 
-```
-➝  new project with `Playwright`:
+## Updating Playwright
 
-```sh
- npm init playwright@latest
-```
+➝  check if Playwright should be updated: `npm outdated @playwright/test`  
+➝  update Playwright: `npm i @playwright/test`  
+➝  update browsers: `npx playwright install`  
+➝  verify Playwright version: `npx @playwright/test --version`   
 
-➝  record tests for given site:
+## Chrome DevTools
 
-```sh
- npx playwright codegen https://demo-bank.vercel.app/ 
-```
-
-➝  run tests without browser GUI:
-
-```sh
- npx playwright test 
-```
-
-➝  run tests with browser GUI:
-
-```sh
- npx playwright test --headed 
-```
-
-➝  view report:
-
-```sh
- npx playwright show-report 
-```
+➝  open DevTools <kbd>F12</kbd> or right click: `Inspect`  
+➝  testing CSS selectors in Console: `$$('selector')`  

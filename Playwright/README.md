@@ -6,12 +6,14 @@
 
 ### [Repository Playwright](https://github.com/microsoft/playwright)
 
-## Learning automatic tests in Playwright with jaktestowac.pl
+# Learning automatic tests in Playwright with jaktestowac.pl
 
 - Course from the [jaktestowac.pl](https://jaktestowac.pl/course/playwright-wprowadzenie/) <br>
 - Tested site [demo-bank](https://demo-bank.vercel.app/) <br>
 - Software [VSCode](https://code.visualstudio.com/) <br>
 - Programming language [TypeScript](https://www.typescriptlang.org/) 
+
+<br>
 
 ## Tips for Visual Studio Code:
 :small_orange_diamond: <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>↓/↑</kbd> -> copy line up/down  
@@ -60,4 +62,31 @@
 
 ```sh
  npx playwright show-report 
+```
+<br>
+
+## Updating Playwright  
+
+➝  check if Playwright should be updated:
+
+```sh
+npm outdated @playwright/test
+```
+
+➝  update Playwright:
+
+```sh
+npm i @playwright/test
+```
+
+➝  update browsers:
+
+```sh
+npx playwright install
+```
+
+➝  verify Playwright version:
+
+```sh
+npx @playwright/test --version
 ```

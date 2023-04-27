@@ -6,9 +6,9 @@
  
 ## What was done in the lesson S02L03
 - Updating the playwright package and browsers:  
--> Checking the current version of Playwrigth (package.json): `npx @playwright/test --version`  
--> Playwright upgrade to Version 1.33.0: `npm i @playwright/test`  
--> Installing new versions of browsers: `npx playwright install` 
+    - Checking the current version of Playwrigth **package.json** : `npx @playwright/test --version`  
+    - Playwright upgrade to Version 1.33.0: `npm i @playwright/test`  
+    - Installing new versions of browsers: `npx playwright install` 
 
 - Install Prettier: `npm install --save-dev --save-exact prettier` 
 
@@ -45,21 +45,21 @@ README.md
 
 ## Commands Playwright
 
-➝  check **NodeJS** version: `node -v`  
-➝  new project with **Playwright**: `npm init playwright@latest`  
-➝  record tests for given site: `npx playwright codegen https://demo-bank.vercel.app/`  
-➝  run tests without browser GUI: `npx playwright test`  
-➝  run tests with browser GUI: `npx playwright test --headed`  
-➝  view report: `npx playwright show-report`  
+-  check **NodeJS** version: `node -v`  
+-  new project with **Playwright**: `npm init playwright@latest`  
+-  record tests for given site: `npx playwright codegen https://demo-bank.vercel.app/`  
+-  run tests without browser GUI: `npx playwright test`  
+-  run tests with browser GUI: `npx playwright test --headed`  
+-  view report: `npx playwright show-report`  
 
 ## Updating Playwright
 
-➝  check if Playwright should be updated: `npm outdated @playwright/test`  
-➝  update Playwright: `npm i @playwright/test`  
-➝  update browsers: `npx playwright install`  
-➝  verify Playwright version: `npx @playwright/test --version`   
+-  check if Playwright should be updated: `npm outdated @playwright/test`  
+-  update Playwright: `npm i @playwright/test`  
+-  update browsers: `npx playwright install`  
+-  verify Playwright version: `npx @playwright/test --version`   
 
 ## Chrome DevTools
 
-➝  open DevTools <kbd>F12</kbd> or right click: `Inspect`  
-➝  testing CSS selectors in Console: `$$('selector')`  
+-  open DevTools <kbd>F12</kbd> or right click: `Inspect`  
+-  testing CSS selectors in Console: `$$('selector')`  

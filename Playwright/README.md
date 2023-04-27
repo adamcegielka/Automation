@@ -15,7 +15,7 @@
 
 <br>
 
-## Tips for Visual Studio Code:
+## Tips for VSCode:
 :small_orange_diamond: <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>↓/↑</kbd> -> copy line up/down  
 :small_orange_diamond: <kbd>ALT</kbd> + <kbd>↓/↑</kbd> -> moving the whole line  
 :small_orange_diamond: <kbd>SHIFT</kbd> + <kbd>CTRL</kbd> + <kbd>K</kbd> -> delete line  
@@ -25,68 +25,23 @@
 :small_orange_diamond: <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>F</kbd> -> code formatting  
 :small_orange_diamond: <kbd>CTRL</kbd> + <kbd>SPACE</kbd> -> suggestions  
 
-<br>
+## Commands Playwright
 
-## Commands Playwright:
+:small_orange_diamond:  check **NodeJS** version: `node -v`  
+:small_orange_diamond:  new project with **Playwright**: `npm init playwright@latest`  
+:small_orange_diamond:  record tests for given site: `npx playwright codegen https://demo-bank.vercel.app/`  
+:small_orange_diamond:  run tests without browser GUI: `npx playwright test`  
+:small_orange_diamond:  run tests with browser GUI: `npx playwright test --headed`  
+:small_orange_diamond:  view report: `npx playwright show-report`  
 
-➝  check `NodeJS` version:
+## Updating Playwright
 
-```sh
- node -v 
-```
-➝  new project with `Playwright`:
+:small_orange_diamond:  check if Playwright should be updated: `npm outdated @playwright/test`  
+:small_orange_diamond:  update Playwright: `npm i @playwright/test`  
+:small_orange_diamond:  update browsers: `npx playwright install`  
+:small_orange_diamond:  verify Playwright version: `npx @playwright/test --version`   
 
-```sh
- npm init playwright@latest
-```
+## Chrome DevTools
 
-➝  record tests for given site:
-
-```sh
- npx playwright codegen https://demo-bank.vercel.app/ 
-```
-
-➝  run tests without browser GUI:
-
-```sh
- npx playwright test 
-```
-
-➝  run tests with browser GUI:
-
-```sh
- npx playwright test --headed 
-```
-
-➝  view report:
-
-```sh
- npx playwright show-report 
-```
-<br>
-
-## Updating Playwright  
-
-➝  check if Playwright should be updated:
-
-```sh
-npm outdated @playwright/test
-```
-
-➝  update Playwright:
-
-```sh
-npm i @playwright/test
-```
-
-➝  update browsers:
-
-```sh
-npx playwright install
-```
-
-➝  verify Playwright version:
-
-```sh
-npx @playwright/test --version
-```
+:small_orange_diamond:  open DevTools <kbd>F12</kbd> or right click: `Inspect`  
+:small_orange_diamond:  testing CSS selectors in Console: `$$('selector')`  

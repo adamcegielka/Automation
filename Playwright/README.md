@@ -14,11 +14,50 @@
 - Programming language [TypeScript](https://www.typescriptlang.org/) 
 
 ## Tips for Visual Studio Code:
-:small_orange_diamond: `SHIFT + ALT + ↓/↑` : copy line up/down  
-:small_orange_diamond: `ALT + ↓/↑` : moving the whole line  
-:small_orange_diamond: `SHIFT + CTRL + K` : delete line  
-:small_orange_diamond: `CTRL + F` : find  
-:small_orange_diamond: `CTRL + B` : left sidebar  
-:small_orange_diamond: `CTRL + SHIFT + R` : Refactor ...  
-:small_orange_diamond: `SHIFT + ALT + F` : code formatting  
-:small_orange_diamond: `CTRL + SPACE` : suggestions  
+:small_orange_diamond: <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>↓/↑</kbd> -> copy line up/down  
+:small_orange_diamond: <kbd>ALT</kbd> + <kbd>↓/↑</kbd> -> moving the whole line  
+:small_orange_diamond: <kbd>SHIFT</kbd> + <kbd>CTRL</kbd> + <kbd>K</kbd> -> delete line  
+:small_orange_diamond: <kbd>CTRL</kbd> + <kbd>F</kbd> -> find  
+:small_orange_diamond: <kbd>CTRL</kbd> + <kbd>B</kbd> -> left sidebar  
+:small_orange_diamond: <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>R</kbd> -> Refactor ...  
+:small_orange_diamond: <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>F</kbd> -> code formatting  
+:small_orange_diamond: <kbd>CTRL</kbd> + <kbd>SPACE</kbd> -> suggestions  
+
+<br>
+
+## Commands Playwright:
+
+➝  check `NodeJS` version:
+
+```sh
+ node -v 
+```
+➝  new project with `Playwright`:
+
+```sh
+ npm init playwright@latest
+```
+
+➝  record tests for given site:
+
+```sh
+ npx playwright codegen https://demo-bank.vercel.app/ 
+```
+
+➝  run tests without browser GUI:
+
+```sh
+ npx playwright test 
+```
+
+➝  run tests with browser GUI:
+
+```sh
+ npx playwright test --headed 
+```
+
+➝  view report:
+
+```sh
+ npx playwright show-report 
+```

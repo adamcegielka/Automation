@@ -14,9 +14,9 @@
 
 - exlude files in: `.prettierignore`
 ```TypeScript
+playwright-report
 package-lock.json
 package.json
-playwright-report
 README.md
 ```  
 
@@ -42,8 +42,6 @@ README.md
 - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>F</kbd> -> code formatting
 - <kbd>CTRL</kbd> + <kbd>SPACE</kbd> -> suggestions
 - <kbd>CTRL</kbd> + <kbd>C</kbd> -> cancelling Node process: hit twice
-
-<br>
 
 ## Commands Playwright
 

@@ -6,7 +6,7 @@ test.describe('Desktop testing', () => {
     const url = 'https://demo-bank.vercel.app/';
     const userId = 'testyAdi';
     const userPassword = '87654321';
-    
+
     const receiverId = '2';
     const transferAmount = '150';
     const transferTitle = 'Zwrot kasy';
@@ -25,9 +25,11 @@ test.describe('Desktop testing', () => {
     await page.getByTestId('close-button').click();
 
     // Assert
-    await expect(page.locator('#show_messages')).toHaveText(`Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`);
+    await expect(page.locator('#show_messages')).toHaveText(
+      `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`
+    );
   });
- 
+
   test('successful mobile phone top-up', async ({ page }) => {
     await page.goto('https://demo-bank.vercel.app/');
     await page.getByTestId('login-input').fill('testyAdi');
@@ -40,6 +42,8 @@ test.describe('Desktop testing', () => {
     await page.getByRole('button', { name: 'doładuj telefon' }).click();
     await page.getByTestId('close-button').click();
 
-    await expect(page.locator('#show_messages')).toHaveText('Doładowanie wykonane! 90,00PLN na numer 502 xxx xxx');
+    await expect(page.locator('#show_messages')).toHaveText(
+      'Doładowanie wykonane! 90,00PLN na numer 502 xxx xxx'
+    );
   });
 });

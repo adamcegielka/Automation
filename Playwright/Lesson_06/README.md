@@ -1,8 +1,20 @@
-## Tested site 
-[demo-bank](https://demo-bank.vercel.app/)
+## Description
+- Lesson #08 [https://jaktestowac.pl/](https://jaktestowac.pl/lesson/pw1s02l03/) - Test analysis with Trace Viewer
+- Tested site [demo-bank](https://demo-bank.vercel.app/)
+ 
+## What was done in the lesson #08 
+- Updating the playwright package and browsers:  
+-> Checking the current version of Playwrigth (package.json) `npx @playwright/test --version`  
+-> Playwright upgrade to Version 1.33.0 `npm i @playwright/test`  
+-> Installing new versions of browsers `npx playwright install`  
+   
+- DevTools:  
+-> Searching for elements using the CSS locator in Console `$$('#uniform-widget_1_topup_agreement span')`  
+
+<br>
 
 ## Tips for VSC
-- `SHIFT + ALT + ↓/↑` -> copy line up/down 
+- `ALT + SHIFT + ↓/↑` -> copy line up/down 
 - `ALT + ↓/↑` -> moving the whole line 
 - `SHIFT + CTRL + K` -> delete line  
 - `CTRL + F` -> find  
@@ -10,20 +22,6 @@
 - `CTRL + SHIFT + R` -> Refactor ...
 - `SHIFT + ALT + F` -> code formatting
 - `CTRL + SPACE` -> suggestions
- 
-## What was done in the lesson #5 
-- Code refactoring:  
--> Inserting a variable into a string `Text ${ }`   
-- Project versioning with Git [Lesson](https://jaktestowac.pl/lesson/pw1sb01l05/) :  
--> Setting email for Git user `git config --global user.email "youremail@example.com"`  
--> Setting name for Git user: `git config --global user.name "your name"`  
--> Installation of the **GitLens** extension to VSC
-- Updating the playwright package and browsers [Lesson](https://jaktestowac.pl/lesson/pw1sb01l02/) :  
--> Checking the current version of Playwrigth (package.json) `npx @playwright/test --version`  
--> Checking the latest version of Playwrigth `npm outdated @playwright/test`  
--> Playwright update `npm i @playwright/test`  
--> Path to the browsers directory: `%USERPROFILE%\AppData\Local\ms-playwright`  
--> Installing new versions of browsers `npx playwright install`  
 
 <br>
 

@@ -1,5 +1,6 @@
-## Tested site 
-[demo-bank](https://demo-bank.vercel.app/)
+## Description
+- Lesson #03 [https://jaktestowac.pl/](https://jaktestowac.pl/lesson/pw1s01l03/) - Development Tests and locators
+- Tested site [demo-bank](https://demo-bank.vercel.app/)
 
 ## Playwrith snippets
 

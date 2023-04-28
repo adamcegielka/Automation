@@ -1,5 +1,5 @@
 ## Description
-- Lesson S02L03 [https://jaktestowac.pl/](https://jaktestowac.pl/lesson/pw1s02l03/) - Test analysis with Trace Viewer
+- Lesson S02L03 [jaktestowac.pl](https://jaktestowac.pl/lesson/pw1s02l03/) - Test analysis with Trace Viewer
 - Formatting code with [Prettier](https://jaktestowac.pl/lesson/pw1sb01l06/)
 - [REST API](https://jaktestowac.pl/api/) Testing Basics
 - Tested site [demo-bank](https://demo-bank.vercel.app/)
@@ -53,7 +53,7 @@ README.md
     ```
 - Start-up on Trace Viewer `npx playwright show-trace trace.zip`
 - Open up UI mode `npx playwright test --ui`
-- Trace Viewer presentation on [jaktestować.pl](https://con.jaktestowac.pl/wp-content/uploads/PW/1/S02/PW1S02L03.jpg)
+- Trace Viewer presentation on [jaktestowac.pl](https://con.jaktestowac.pl/wp-content/uploads/PW/1/S02/PW1S02L03.jpg)
 
 <br>
 

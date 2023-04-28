@@ -19,6 +19,7 @@ playwright-report
 package-lock.json
 package.json
 README.md
+test-results
 ```  
 
 - set rules in: `.prettierrc.json`

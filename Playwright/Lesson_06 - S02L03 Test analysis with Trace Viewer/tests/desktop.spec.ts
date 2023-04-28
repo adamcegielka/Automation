@@ -10,7 +10,7 @@ test.describe('Desktop testing', () => {
     const receiverId = '2';
     const transferAmount = '150';
     const transferTitle = 'Zwrot kasy';
-    const expectedTransferReceiver = 'Bug Chuck Demobankowy';
+    const expectedTransferReceiver = 'Chuck Demobankowy';
 
     // Act
     await page.goto(url);

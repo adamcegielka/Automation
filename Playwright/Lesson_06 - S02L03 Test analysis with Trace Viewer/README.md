@@ -3,7 +3,7 @@
 - Formatting code with [Prettier](https://jaktestowac.pl/lesson/pw1sb01l06/)
 - [REST API](https://jaktestowac.pl/api/) Testing Basics
 - Tested site [demo-bank](https://demo-bank.vercel.app/)
-- Playwright's UI Mode: [Watch mode and time travel debugging](https://www.youtube.com/watch?v=d0u6XhXknzU)
+- YouTube - Playwright's UI Mode: [Watch mode and time travel debugging](https://www.youtube.com/watch?v=d0u6XhXknzU)
  
 ## What was done in the lesson S02L03
 - Updating the playwright package and browsers:  

@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "c5554864-18d3-413b-acc5-ce5d63cd2e66",
+		"name": "Trello Srodowisko - Zmienne",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24777190"
+	},
+	"item": [
+		{
+			"name": "Tworzenie nowej tablicy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/boards/?name=Tablica z API&key={{keyNumber}}&token={{tokenNumber}}",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tablica z API"
+						},
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy - Tablic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/members/me/boards?key={{keyNumber}}&token={{tokenNumber}}",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/boards/63bc1ed34f016d00974b6875/lists?key={{keyNumber}}&token={{tokenNumber}}",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"boards",
+						"63bc1ed34f016d00974b6875",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy - Kart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/boards/63bc1ed34f016d00974b6875/cards?key={{keyNumber}}&token={{tokenNumber}}",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"boards",
+						"63bc1ed34f016d00974b6875",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj listy \"Dokumentacja\" w Tablica Testowa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/boards/63bc231d65722001d4d5fc12/lists?key={{keyNumber}}&token={{tokenNumber}}&name=Dokumentacja",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"boards",
+						"63bc231d65722001d4d5fc12",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						},
+						{
+							"key": "name",
+							"value": "Dokumentacja"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj listy \"Do zrobienia\" w Tablica Testowa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/boards/63bc231d65722001d4d5fc12/lists?key={{keyNumber}}&token={{tokenNumber}}&name=Do zrobienia",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"boards",
+						"63bc231d65722001d4d5fc12",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						},
+						{
+							"key": "name",
+							"value": "Do zrobienia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj listy \"Do sprawdzenia\" w Tablica z API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/boards/63bc1ed34f016d00974b6875/lists?key={{keyNumber}}&token={{tokenNumber}}&name=Do sprawdzenia",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"boards",
+						"63bc1ed34f016d00974b6875",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						},
+						{
+							"key": "name",
+							"value": "Do sprawdzenia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj karty w Tablica API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{addressUrl}}/cards/?idList=63bc1ed34f016d00974b687d&key={{keyNumber}}&token={{tokenNumber}}&name=Nie działa system logowania",
+					"host": [
+						"{{addressUrl}}"
+					],
+					"path": [
+						"cards",
+						""
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "63bc1ed34f016d00974b687d"
+						},
+						{
+							"key": "key",
+							"value": "{{keyNumber}}"
+						},
+						{
+							"key": "token",
+							"value": "{{tokenNumber}}"
+						},
+						{
+							"key": "name",
+							"value": "Nie działa system logowania"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "addressUrl",
+			"value": "https://api.trello.com/1",
+			"type": "string"
+		}
+	]
+}

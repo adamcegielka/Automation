@@ -12,3 +12,7 @@ My exercises in automated testing from the course from Udemy [Kurs Selenium Java
 <br><br>
 ![BDD](https://img.shields.io/badge/-BDD-3776AB?style=flat&logo=BDD&logoColor=white)  
 My testing exercises in the BDD methodology
+<br><br>
+![Postman](https://img.shields.io/badge/-Postman-3776AB?style=flat&logo=Postman&logoColor=white)
+<br>
+My exercise in Postman

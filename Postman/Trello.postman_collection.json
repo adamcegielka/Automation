@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "64bf4c64-6d74-4bc4-bf65-c296e3238025",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24777190"
+	},
+	"item": [
+		{
+			"name": "Tworzenie nowej tablicy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Tablica z API&key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tablica z API"
+						},
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy - Tablic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy - List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63bc1ed34f016d00974b6875/lists?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63bc1ed34f016d00974b6875",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy - Kart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63bc1ed34f016d00974b6875/cards?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63bc1ed34f016d00974b6875",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj listy \"Dokumentacja\" w Tablica Testowa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63bc231d65722001d4d5fc12/lists?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6&name=Dokumentacja",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63bc231d65722001d4d5fc12",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						},
+						{
+							"key": "name",
+							"value": "Dokumentacja"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj listy \"Do zrobienia\" w Tablica Testowa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63bc231d65722001d4d5fc12/lists?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6&name=Do zrobienia",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63bc231d65722001d4d5fc12",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						},
+						{
+							"key": "name",
+							"value": "Do zrobienia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj listy \"Do sprawdzenia\" w Tablica z API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/63bc1ed34f016d00974b6875/lists?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6&name=Do sprawdzenia",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"63bc1ed34f016d00974b6875",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						},
+						{
+							"key": "name",
+							"value": "Do sprawdzenia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowj karty w Tablica API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/?idList=63bc1ed34f016d00974b687d&key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6&name=Nie działa system logowania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						""
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "63bc1ed34f016d00974b687d"
+						},
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						},
+						{
+							"key": "name",
+							"value": "Nie działa system logowania"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aktualizacja karty",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/63bc2d996b7b6700fcf899eb?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6&name=Zmiana nazwy&desc=Testowanie",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"63bc2d996b7b6700fcf899eb"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						},
+						{
+							"key": "name",
+							"value": "Zmiana nazwy"
+						},
+						{
+							"key": "desc",
+							"value": "Testowanie"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuwanie Karty",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/63bc369b19cfd7028d5945cf?key=5499580b70f3bd6aeb95df7511daf3ec&token=ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"63bc369b19cfd7028d5945cf"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "5499580b70f3bd6aeb95df7511daf3ec"
+						},
+						{
+							"key": "token",
+							"value": "ATTAe93d2d7b7bd147c36d53607786ddb3c4322ebbf55f73b41a261ce126e6293696217B25C6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

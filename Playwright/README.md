@@ -32,7 +32,9 @@
 :small_orange_diamond:  record tests for given site: `npx playwright codegen https://demo-bank.vercel.app/`  
 :small_orange_diamond:  run tests without browser GUI: `npx playwright test`  
 :small_orange_diamond:  run tests with browser GUI: `npx playwright test --headed`  
-:small_orange_diamond:  view report: `npx playwright show-report`  
+:small_orange_diamond:  view report: `npx playwright show-report`   
+:small_orange_diamond:  open up Trace Viewe: `npx playwright test --trace on`   
+:small_orange_diamond:  open up UI mode: `npx playwright test --ui`  
 
 ## Updating Playwright
 

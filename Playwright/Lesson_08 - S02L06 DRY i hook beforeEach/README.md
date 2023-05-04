@@ -1,9 +1,21 @@
 ## Description
 - Lesson S02L06 [jaktestowac.pl](https://jaktestowac.pl/lesson/pw1s02l06/) - DRY and hook beforeEach
  
-## What was done in the lesson S02L05
-- DRY
-- Hook beforeEach
+## What was done in the lesson S02L06
+- DRY (Don’t Repeat Yourself))
+- Hook beforeEach `beforeEach()`
+
+```TypeScript
+test.beforeEach (async ({ page }) => {
+    const userId = 'xxx';
+    const userPassword = 'xxxx';
+
+    await page.goto('/');
+    await page.getByTestId('login-input').fill(userId);
+    await page.getByTestId('password-input').fill(userPassword);
+    await page.getByTestId('login-button').click();
+});
+```
 <br>
 
 ## Tips for VSCode

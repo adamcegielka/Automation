@@ -2,7 +2,7 @@
 - Lesson S02L06 [jaktestowac.pl](https://jaktestowac.pl/lesson/pw1s02l06/) - DRY and hook beforeEach
  
 ## What was done in the lesson S02L06
-- DRY (Don’t Repeat Yourself))
+- DRY (Don’t Repeat Yourself)
 - Hook beforeEach `beforeEach()`
 
 ```TypeScript
@@ -16,7 +16,9 @@ test.beforeEach (async ({ page }) => {
     await page.getByTestId('login-button').click();
 });
 ```
-<br>
+- Placing `URL` values in the `playwright.config.ts` file under the `baseURL` variable  
+`await page.goto('/');`
+<br><br>
 
 ## Tips for VSCode
 - <kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>↓/↑</kbd> -> copy line up/down 

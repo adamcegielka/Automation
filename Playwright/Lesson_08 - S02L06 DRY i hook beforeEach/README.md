@@ -39,9 +39,10 @@ test.beforeEach (async ({ page }) => {
 - run tests without browser GUI: `npx playwright test`  
 - run tests with browser GUI: `npx playwright test --headed`  
 - view report: `npx playwright show-report` 
-- start-up on Trace Viewer `npx playwright show-trace trace.zip`
+- start-up on Trace Viewer: `npx playwright show-trace trace.zip`
 - open up Trace Viewe: `npx playwright test --trace on`
-- open up UI mode `npx playwright test --ui` 
+- open up UI mode: `npx playwright test --ui` 
+- Running tests for a given file: `npx playwright test tests/filename.spec.ts`
 
 ## Updating Playwright
 

@@ -5,12 +5,10 @@
 - Playwright Test plug-in
 - Extracting login data
 - Recording a new test using the plug-in
-- Formatting under the shortcut Ctrl + S
+- Formatting under the shortcut <kbd>Ctrl</kbd> + <kbd>S</kbd>
+- Refresh Tests: <kbd>Ctrl</kbd> + <kbd>R</kbd>  
+Reloading the VSC window: <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> -> `Developer: Reload Window`
 - Parallel test execution vs. resources on the machine
-`package.json`:
-```json
- 
-```
 <br><br>
 
 ## Tips for VSCode
@@ -23,6 +21,8 @@
 - <kbd>SHIFT</kbd> + <kbd>ALT</kbd> + <kbd>F</kbd> -> code formatting
 - <kbd>CTRL</kbd> + <kbd>SPACE</kbd> -> suggestions
 - <kbd>CTRL</kbd> + <kbd>C</kbd> -> cancelling Node process: hit twice
+- <kbd>Ctrl</kbd> + <kbd>R</kbd> -> Refresh Tests
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> -> Reloading the VSC window `Developer: Reload Window`
 
 ## Commands Playwright
 

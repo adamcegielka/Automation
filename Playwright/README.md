@@ -8,9 +8,10 @@
 
 # Learning automatic tests in Playwright with jaktestowac.pl
 
-- Course from the [jaktestowac.pl](https://jaktestowac.pl/course/playwright-wprowadzenie/) <br>
-- Tested site [demo-bank](https://demo-bank.vercel.app/) <br>
-- Software [VSCode](https://code.visualstudio.com/) <br>
+- Course from the [jaktestowac.pl](https://jaktestowac.pl/course/playwright-wprowadzenie/)  
+- Repository jaktestowac [GitHub](https://github.com/jaktestowac/playwright_automatyzacja_wprowadzenie)  
+- Tested site [demo-bank](https://demo-bank.vercel.app/)  
+- Software [VSCode](https://code.visualstudio.com/)  
 - Programming language [TypeScript](https://www.typescriptlang.org/) 
 
 <br>

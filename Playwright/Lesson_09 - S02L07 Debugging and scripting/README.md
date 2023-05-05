@@ -1,7 +1,7 @@
 ## Description
 - Lesson S02L07 [jaktestowac.pl](https://jaktestowac.pl/lesson/pw1s02l07/) - Debugging and scripting
  
-## What was done in the lesson S02L06
+## What was done in the lesson S02L07
 - Scripts in package.json
 - Run in debug mode
 - New test and debugging  

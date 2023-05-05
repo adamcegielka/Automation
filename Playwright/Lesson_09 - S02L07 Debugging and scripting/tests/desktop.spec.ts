@@ -48,4 +48,23 @@ test.describe('Desktop testing', () => {
     // Assert
     await expect(page.locator('#show_messages')).toHaveText(expectMessage);
   });
+
+  test('correct balance after successful mobile phone top-up', async ({ page }) => {
+    // Arrang
+    const phoneNumber = '502 xxx xxx';
+    const topUpAmount = '90';
+    const expectMessage = `Doładowanie wykonane! ${topUpAmount},00PLN na numer ${phoneNumber}`;
+    const initialBalance = await page.locator('#money_value').innerText();
+    const expectBalance = Number(initialBalance) - Number(topUpAmount);
+
+    // Act    
+    await page.locator('#widget_1_topup_receiver').selectOption(phoneNumber);
+    await page.locator('#widget_1_topup_amount').fill(topUpAmount);
+    await page.locator('#uniform-widget_1_topup_agreement span').click();
+    await page.getByRole('button', { name: 'doładuj telefon' }).click();
+    await page.getByTestId('close-button').click();
+
+    // Assert
+    await expect(page.locator('#money_value')).toHaveText(`${expectBalance}`);
+  });
 });

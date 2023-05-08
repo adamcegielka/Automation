@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { loginData } from '../test-data/login.date';
+import { LoginPage } from '../pages/login.page';
 
 test.describe('Payment testing', () => {
   test.beforeEach(async ({ page }) => {
@@ -7,9 +8,12 @@ test.describe('Payment testing', () => {
     const userPassword = loginData.userPassword;
 
     await page.goto('/');
-    await page.getByTestId('login-input').fill(userId);
-    await page.getByTestId('password-input').fill(userPassword);
-    await page.getByTestId('login-button').click();
+    // Page Object Model - POM
+    const loginPage = new LoginPage(page);
+    await loginPage.loginInput.fill(userId);
+    await loginPage.passwordInput.fill(userPassword);
+    await loginPage.loginButton.click();
+
     await page.getByRole('link', { name: 'płatności' }).click();
   });
 

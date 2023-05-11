@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { loginData } from '../test-data/login.date';
-import { LoginPage } from '../pages/login.page';
+import { LoginPage } from '../test-pages/login.page';
 
 test.describe('User login to Demobank', () => {
   test.beforeEach(async ({ page }) => {
@@ -29,30 +29,33 @@ test.describe('User login to Demobank', () => {
     const shortUserId = 'testy';
     const expectErrorMessage = 'identyfikator ma min. 8 znaków';
 
-    // Act
-    await page.getByTestId('login-input').fill(shortUserId);
-    await page.getByTestId('password-input').click();
+    // Act - POM
+    const loginPage = new LoginPage(page);
+    await loginPage.loginInput.fill(shortUserId);
+    await loginPage.passwordInput.click();
+    // await page.getByTestId('login-input').fill(shortUserId);
+    // await page.getByTestId('password-input').click();
 
-    // Assert
-    await expect(page.getByTestId('error-login-id')).toHaveText(
-      expectErrorMessage
-    );
+    // Assert - POM
+    await expect(loginPage.loginError).toHaveText(expectErrorMessage);
   });
 
   test('unsuccessful login with too short password', async ({ page }) => {
     // Arrang
     const userId = loginData.userId;
-    const userPassword = '87654';
+    const userPasswordShort = '87654';
     const expectErrorMessage = 'hasło ma min. 8 znaków';
 
-    // Act
-    await page.getByTestId('login-input').fill(userId);
-    await page.getByTestId('password-input').fill(userPassword);
-    await page.getByTestId('password-input').blur();
+    // Act - POM
+    const loginPage = new LoginPage(page);
+    await loginPage.loginInput.fill(userId);
+    await loginPage.passwordInput.fill(userPasswordShort);
+    await loginPage.passwordInput.blur();
+    // await page.getByTestId('login-input').fill(userId);
+    // await page.getByTestId('password-input').fill(userPasswordShort);
+    // await page.getByTestId('password-input').blur();
 
-    // Assert
-    await expect(page.getByTestId('error-login-password')).toHaveText(
-      expectErrorMessage
-    );
+    // Assert - POM
+    await expect(loginPage.passwordShort).toHaveText(expectErrorMessage);
   });
 });

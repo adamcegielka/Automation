@@ -2,7 +2,9 @@
 - Lesson S03L04 [jaktestowac.pl](https://jaktestowac.pl/lesson/pw1s03l04/) - Simplest implementation of the POM pattern
  
 ## What was done in the lesson S03L04
-- **Page Object Model in negative tests** Code refactoring
+- **Page Object Model in negative tests** - Code refactoring `login.spec.ts`
+    - test('unsuccessful login with too short username')
+    - test('unsuccessful login with too short password')
 <br><br>
 
 ## Tips for VSCode

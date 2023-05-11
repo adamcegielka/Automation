@@ -7,7 +7,6 @@ export class LoginPage {
   passwordInput = this.page.getByTestId('password-input');
   loginButton = this.page.getByTestId('login-button');
 
-  // await page.getByTestId('login-input').fill(userId);
-  // await page.getByTestId('password-input').fill(userPassword);
-  // await page.getByTestId('login-button').click();
+  loginError = this.page.getByTestId('error-login-id');
+  passwordShort = this.page.getByTestId('error-login-password');
 }

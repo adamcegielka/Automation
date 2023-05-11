@@ -1,0 +1,25 @@
+{
+  "name": "demo-bank-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:record": "npx playwright codegen https://demo-bank.vercel.app/",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:login": "npm run test tests/login.spec.ts",
+    "test:login:headed": "npm run test tests/login.spec.ts -- --headed",
+    "test:desktop": "npm run test tests/desktop.spec.ts",
+    "test:desktop:headed": "npm run test tests/desktop.spec.ts -- --headed ",
+    "report": "npx playwright show-report",
+    "open:ui": "npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0",
+    "@types/node": "^18.15.11",
+    "prettier": "2.8.8"
+  }
+}

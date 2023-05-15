@@ -8,7 +8,10 @@
 
 # Learning automatic tests in Playwright
 
-- Website to test [Automation Test Store](https://automationteststore.com/)  
+- Websites to test:
+    - [Example Domain](https://www.example.com/) 
+    - [Zero - Personal Banking](http://zero.webappsecurity.com/) 
+    - [Automation Test Store](https://automationteststore.com/)  
 - Software [VSCode](https://code.visualstudio.com/)  
 - Programming language [TypeScript](https://www.typescriptlang.org/) 
 

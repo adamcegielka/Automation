@@ -31,9 +31,7 @@ test.describe('Test suite', () => {
     await page.click('text=Sign in');
 
     const errorMessage = await page.locator('.alert-error');
-    await expect(errorMessage).toContainText(
-      'Login and/or password are wrong.'
-    );
+    await expect(errorMessage).toContainText('Login and/or password are wrong.');
   });
 
   // ASSERTION AND TAG TEST - @nameTag -- npx playwright test --grep @assert / OPPOSITE: npx playwright test --grep--invert @assert

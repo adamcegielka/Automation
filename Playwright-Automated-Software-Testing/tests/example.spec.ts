@@ -28,3 +28,20 @@ test('working with inputs', async ({ page }) => {
   const errorMessage = await page.locator('.alert-error');  
   await expect(errorMessage).toContainText('Login and/or password are wrong.');  
 });
+
+test.only('assertions', async ({ page }) => {
+  const url = 'https://www.example.com/';
+  await page.goto(url);
+  await expect(page).toHaveURL(url);
+  await expect(page).toHaveTitle('Example Domain');
+
+  // Checking a existent element
+  const element = await page.locator('h1');
+  await expect(element).toBeVisible();
+  await expect(element).toHaveText('Example Domain');
+  await expect(element).toHaveCount(1);
+
+  // Checking a non-existent element
+  const nonExistingElement = await page.locator('h5');
+  await expect(nonExistingElement).not.toBeVisible();
+});

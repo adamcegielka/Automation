@@ -15,7 +15,9 @@
     "test:browser:webkit:headed": "npx playwright test --headed --browser=webkit",
     "test:browser:all": "npx playwright test --browser=all",
     "report": "npx playwright show-report",
-    "open:ui": "npx playwright test --ui"
+    "open:ui": "npx playwright test --ui",
+    "debugging:all": "npx playwright test --debug",
+    "debugging:one": "npx playwright test example.spec.ts --debug"
   },
   "author": "Adam Cegielka",
   "license": "ISC",

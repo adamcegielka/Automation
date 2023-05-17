@@ -20,7 +20,6 @@ test('clickin on elements', async ({ page }) => {
 
 // MULTIPLE TESTS IN ONE
 test.describe('Test suite', () => {
-
   // WORKING WITH INPUTS
   test('working with inputs', async ({ page }) => {
     const url = 'http://zero.webappsecurity.com/';

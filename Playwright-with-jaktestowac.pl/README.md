@@ -41,6 +41,51 @@
 :small_orange_diamond:  open up Trace Viewe: `npx playwright test --trace on`   
 :small_orange_diamond:  open up UI mode: `npx playwright test --ui`  
 
+## Commands Playwright
+:small_orange_diamond:  Import  
+```TypeScript
+import { test, expect, chromium } from '@playwright/test';
+```
+:small_orange_diamond: Test  
+```TypeScript
+test('Title', async ({ page }) => {
+    // ...
+});
+```
+:small_orange_diamond: Describe  
+```TypeScript
+test.describe('Title two tests', () => {
+    test('Title1', async ({ page }) => {
+    // ...
+    });
+    test('Title2', async ({ page }) => {
+    // ...
+    });
+});
+```
+:small_orange_diamond: test.afterAll  
+```TypeScript
+test.afterAll(async () => {
+  console.log('Done with tests');
+  // ...
+});
+```
+:small_orange_diamond: test.beforeAll  
+```TypeScript
+test.beforeAll(async () => {
+  console.log('Before tests');
+});
+
+test.afterAll(async () => {
+  console.log('After tests');
+});
+
+test('my test', async ({ page }) => {
+  // ...
+});
+```
+
+
 ## Updating Playwright
 
 :small_orange_diamond:  check if Playwright should be updated: `npm outdated @playwright/test`  

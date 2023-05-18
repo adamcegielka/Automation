@@ -26,11 +26,9 @@ test.describe('Desktop testing', () => {
     // Act
     const desktopPage = new DesktopPage(page);
     await desktopPage.transferReceiver.selectOption(receiverId);
-    await desktopPage.topupAmount.fill(transferAmount);
+    await desktopPage.transferAmount.fill(transferAmount);
     await desktopPage.transferTitle.fill(transferTitle);
     await desktopPage.buttonMake.click();
-    // ERROR TO FIXED
-    // await page.getByTestId('close-button').click();
     await desktopPage.buttonClose.click();
 
     // Assert

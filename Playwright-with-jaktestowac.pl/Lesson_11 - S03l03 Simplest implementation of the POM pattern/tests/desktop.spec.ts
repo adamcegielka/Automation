@@ -30,9 +30,8 @@ test.describe('Desktop testing', () => {
     await page.getByTestId('close-button').click();
 
     // Assert
-    await expect(page.locator('#show_messages')).toHaveText(
-      `Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`
-    );
+    await expect(page.locator('#show_messages'))
+    .toHaveText(`Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`);
   });
 
   test('successful mobile phone top-up', async ({ page }) => {
@@ -52,9 +51,7 @@ test.describe('Desktop testing', () => {
     await expect(page.locator('#show_messages')).toHaveText(expectMessage);
   });
 
-  test('correct balance after successful mobile phone top-up', async ({
-    page,
-  }) => {
+  test('correct balance after successful mobile phone top-up', async ({ page }) => {
     // Arrang
     const phoneNumber = '502 xxx xxx';
     const topUpAmount = '90';

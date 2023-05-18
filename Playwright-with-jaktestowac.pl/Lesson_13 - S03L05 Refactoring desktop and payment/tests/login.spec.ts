@@ -33,8 +33,6 @@ test.describe('User login to Demobank', () => {
     const loginPage = new LoginPage(page);
     await loginPage.loginInput.fill(shortUserId);
     await loginPage.passwordInput.click();
-    // await page.getByTestId('login-input').fill(shortUserId);
-    // await page.getByTestId('password-input').click();
 
     // Assert - POM
     await expect(loginPage.loginError).toHaveText(expectErrorMessage);
@@ -51,9 +49,6 @@ test.describe('User login to Demobank', () => {
     await loginPage.loginInput.fill(userId);
     await loginPage.passwordInput.fill(userPasswordShort);
     await loginPage.passwordInput.blur();
-    // await page.getByTestId('login-input').fill(userId);
-    // await page.getByTestId('password-input').fill(userPasswordShort);
-    // await page.getByTestId('password-input').blur();
 
     // Assert - POM
     await expect(loginPage.passwordShort).toHaveText(expectErrorMessage);

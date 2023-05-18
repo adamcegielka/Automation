@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginData } from '../test-data/login.data';
 import { LoginPage } from '../test-pages/login.page';
+import { DesktopPage } from '../test-pages/desktop.page';
 
 test.describe('Desktop testing', () => {
   test.beforeEach(async ({ page }) => {
@@ -8,7 +9,7 @@ test.describe('Desktop testing', () => {
     const userPassword = loginData.userPassword;
 
     await page.goto('/');
-    // Page Object Model - POM
+    // Page Object Model - POM - I left LoginPage
     const loginPage = new LoginPage(page);
     await loginPage.loginInput.fill(userId);
     await loginPage.passwordInput.fill(userPassword);
@@ -23,14 +24,17 @@ test.describe('Desktop testing', () => {
     const expectedTransferReceiver = 'Chuck Demobankowy';
 
     // Act
-    await page.locator('#widget_1_transfer_receiver').selectOption(receiverId);
-    await page.locator('#widget_1_transfer_amount').fill(transferAmount);
-    await page.locator('#widget_1_transfer_title').fill(transferTitle);
-    await page.getByRole('button', { name: 'wykonaj' }).click();
-    await page.getByTestId('close-button').click();
+    const desktopPage = new DesktopPage(page);
+    await desktopPage.transferReceiver.selectOption(receiverId);
+    await desktopPage.topupAmount.fill(transferAmount);
+    await desktopPage.transferTitle.fill(transferTitle);
+    await desktopPage.buttonMake.click();
+    // ERROR TO FIXED
+    // await page.getByTestId('close-button').click();
+    await desktopPage.buttonClose.click();
 
     // Assert
-    await expect(page.locator('#show_messages'))
+    await expect(desktopPage.messageText)
     .toHaveText(`Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`);
   });
 
@@ -41,31 +45,33 @@ test.describe('Desktop testing', () => {
     const expectMessage = `Doładowanie wykonane! ${topUpAmount},00PLN na numer ${phoneNumber}`;
 
     // Act
-    await page.locator('#widget_1_topup_receiver').selectOption(phoneNumber);
-    await page.locator('#widget_1_topup_amount').fill(topUpAmount);
-    await page.locator('#uniform-widget_1_topup_agreement span').click();
-    await page.getByRole('button', { name: 'doładuj telefon' }).click();
-    await page.getByTestId('close-button').click();
+    const desktopPage = new DesktopPage(page);
+    await desktopPage.topupReceiver.selectOption(phoneNumber);
+    await desktopPage.topupAmount.fill(topUpAmount);
+    await desktopPage.topupAgreement.click();
+    await desktopPage.topUpPhone.click();
+    await desktopPage.buttonClose.click();
 
     // Assert
-    await expect(page.locator('#show_messages')).toHaveText(expectMessage);
+    await expect(desktopPage.messageText).toHaveText(expectMessage);
   });
 
   test('correct balance after successful mobile phone top-up', async ({ page }) => {
     // Arrang
+    const desktopPage = new DesktopPage(page);
     const phoneNumber = '502 xxx xxx';
     const topUpAmount = '90';
-    const initialBalance = await page.locator('#money_value').innerText();
+    const initialBalance = await desktopPage.moneyValue.innerText();
     const expectBalance = Number(initialBalance) - Number(topUpAmount);
 
     // Act
-    await page.locator('#widget_1_topup_receiver').selectOption(phoneNumber);
-    await page.locator('#widget_1_topup_amount').fill(topUpAmount);
-    await page.locator('#uniform-widget_1_topup_agreement span').click();
-    await page.getByRole('button', { name: 'doładuj telefon' }).click();
-    await page.getByTestId('close-button').click();
+    await desktopPage.topupReceiver.selectOption(phoneNumber);
+    await desktopPage.topupAmount.fill(topUpAmount);
+    await desktopPage.topupAgreement.click();
+    await desktopPage.topUpPhone.click();
+    await desktopPage.buttonClose.click();
 
     // Assert
-    await expect(page.locator('#money_value')).toHaveText(`${expectBalance}`);
+    await expect(desktopPage.moneyValue).toHaveText(`${expectBalance}`);
   });
 });

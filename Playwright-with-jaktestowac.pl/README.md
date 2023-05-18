@@ -41,7 +41,7 @@
 :small_orange_diamond:  open up Trace Viewe: `npx playwright test --trace on`   
 :small_orange_diamond:  open up UI mode: `npx playwright test --ui`  
 
-## Commands Playwright
+## Methods
 :small_orange_diamond:  Import  
 ```TypeScript
 import { test, expect, chromium } from '@playwright/test';

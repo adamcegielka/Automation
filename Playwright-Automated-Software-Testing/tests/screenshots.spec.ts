@@ -19,7 +19,7 @@ test.describe('Screenshots', () => {
   test.only('single element screenshot', async ({ page }) => {
     const url = 'https://www.example.com/';
     await page.goto(url);
-    const element = await page.$('h1');
+    const element = await page.locator('h1');
     await element.screenshot( { path: 'scren_single_element.png' });
   });
 });

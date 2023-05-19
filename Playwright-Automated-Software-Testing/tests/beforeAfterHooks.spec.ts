@@ -2,7 +2,7 @@
 
 import { test, expect } from '@playwright/test';
 
-test.describe.only('Before and After Hooks', () => {
+test.describe('Before and After Hooks', () => {
 
   // Before test
   test.beforeEach(async ({ page }) => {

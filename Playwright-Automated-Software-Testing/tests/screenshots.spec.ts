@@ -16,7 +16,7 @@ test.describe('Screenshots', () => {
     await page.locator('.carousel-inner').screenshot({ path: 'scren_carusel.png' });
   });
 
-  test.only('single element screenshot', async ({ page }) => {
+  test('single element screenshot', async ({ page }) => {
     const url = 'https://www.example.com/';
     await page.goto(url);
     const element = await page.locator('h1');

@@ -31,7 +31,7 @@
 :small_orange_diamond: <kbd>CTRL</kbd> + <kbd>R</kbd> -> refresh Tests     
 :small_orange_diamond: <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> -> reloading the VSC window `Developer: Reload Window`  
 
-## installation steps performed in Playwright
+## Installation steps performed in Playwright
 
 :small_orange_diamond:  new project with **Playwright** `npm init`  
 :small_orange_diamond:  instaling prettier `npm install prettier`   

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:record": "npx playwright codegen https://www.example.com/",
+    "test:record:example": "npx playwright codegen https://www.example.com/",
+    "test:record:automationteststore": "npx playwright codegen https://automationteststore.com/",
+    "test:record:zero:webappsecurity": "npx playwright codegen http://zero.webappsecurity.com/",
     "test:headed": "npx playwright test --headed",
     "test:browser:chromium": "npx playwright test --browser=chromium",
     "test:browser:chromium:headed": "npx playwright test --headed --browser=chromium",

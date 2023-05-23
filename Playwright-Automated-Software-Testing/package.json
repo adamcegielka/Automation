@@ -17,7 +17,10 @@
     "test:webkit:headed": "playwright test --headed  --config=playwright.config.ts --project=Webkit",
     "debugging:chromium": "playwright test --debug --config=playwright.config.ts --project=Chromium",
     "debugging:firefox": "playwright test --debug --config=playwright.config.ts --project=Firefox",
-    "debugging:webkit": "playwright test --debug --config=playwright.config.ts --project=Webkit"
+    "debugging:webkit": "playwright test --debug --config=playwright.config.ts --project=Webkit",
+    "tests:e2e:chromium": "playwright test --debug --config=e2e.config.ts --project=Chromium",
+    "tests:e2e:firefox": "playwright test --debug --config=e2e.config.ts --project=Firefox",
+    "tests:e2e:webkit": "playwright test --debug --config=e2e.config.ts --project=Webkit"
   },
   "author": "Adam Cegielka",
   "license": "ISC",

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginRegistrationData } from '../e2e-data/e2e-login.data';
 
-test.describe.only('Feedback Form', () => {
+test.describe('Feedback Form', () => {
 
   test.beforeEach(async ({ page }) => {
     const url = 'http://zero.webappsecurity.com/';

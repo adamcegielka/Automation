@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test.describe.only('Search Engine', () => {
+test.describe('Search Engine', () => {
 
   test.beforeEach(async ({ page }) => {
     const url = 'http://zero.webappsecurity.com/';

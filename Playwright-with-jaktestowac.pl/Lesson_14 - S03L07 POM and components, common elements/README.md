@@ -2,8 +2,7 @@
 - Lesson S03L07 [jaktestowac.pl](https://jaktestowac.pl/lesson/pw1s03l07/) - POM and components, common elements
  
 ## What was done in the lesson S03L07
-- **Page Object Model and components, common elements**
-    - use of the side menu locator
+- **Creation of a new component side menu folder and code refactoring**
 <br><br>
 
 ## Tips for VSCode

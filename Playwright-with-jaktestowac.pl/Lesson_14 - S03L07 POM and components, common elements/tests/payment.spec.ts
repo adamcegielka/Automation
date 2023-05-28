@@ -1,8 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { loginData } from '../test-data/login.data';
 import { PaymentPage } from '../test-pages/payment.page';
+import { LoginPage } from '../test-pages/login.page';
+import { DesktopPage } from '../test-pages/desktop.page';
 
-test.describe('Payment testing', () => {
+test.describe.only('Payment testing', () => {
 
   test.beforeEach(async ({ page }) => {
     const userId = loginData.userId;
@@ -10,12 +12,13 @@ test.describe('Payment testing', () => {
 
     await page.goto('/');
     // Page Object Model - POM - Change from LoginPage to PaymentPage
-    const paymentPage = new PaymentPage(page);
-    await paymentPage.loginInput.fill(userId);
-    await paymentPage.passwordInput.fill(userPassword);
-    await paymentPage.loginButton.click();
+    const loginPage = new LoginPage(page);
+    await loginPage.loginInput.fill(userId);
+    await loginPage.passwordInput.fill(userPassword);
+    await loginPage.loginButton.click();
 
-    await page.getByRole('link', { name: 'płatności' }).click();
+    const desktopPage = new DesktopPage(page);
+    await desktopPage.paymentButton.click();
   });
 
   test('easy payment', async ({ page }) => {

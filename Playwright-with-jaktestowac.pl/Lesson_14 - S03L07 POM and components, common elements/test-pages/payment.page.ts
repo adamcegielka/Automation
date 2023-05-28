@@ -2,6 +2,8 @@ import { Page } from '@playwright/test';
 
 export class PaymentPage {
   constructor(private page: Page) {}
+  
+  paymentButton = this.page.getByRole('link', { name: 'płatności' });
 
   loginInput = this.page.getByTestId('login-input');
   passwordInput = this.page.getByTestId('password-input');

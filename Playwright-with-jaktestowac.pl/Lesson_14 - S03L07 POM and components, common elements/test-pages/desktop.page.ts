@@ -3,6 +3,8 @@ import { Page } from '@playwright/test';
 export class DesktopPage {
   constructor(private page: Page) {}
 
+  paymentButton = this.page.getByRole('link', { name: 'płatności' });
+
   transferReceiver = this.page.locator('#widget_1_transfer_receiver');
   transferAmount = this.page.locator('#widget_1_transfer_amount');
   transferTitle = this.page.locator('#widget_1_transfer_title');

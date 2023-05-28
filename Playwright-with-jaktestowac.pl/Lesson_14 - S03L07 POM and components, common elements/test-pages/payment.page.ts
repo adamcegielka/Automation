@@ -1,9 +1,10 @@
 import { Page } from '@playwright/test';
+import { SideMenuComponent } from '../components/side-menu.component';
 
 export class PaymentPage {
   constructor(private page: Page) {}
-  
-  paymentButton = this.page.getByRole('link', { name: 'płatności' });
+
+  sideMenu = new SideMenuComponent(this.page);
 
   loginInput = this.page.getByTestId('login-input');
   passwordInput = this.page.getByTestId('password-input');

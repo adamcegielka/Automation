@@ -18,7 +18,7 @@ test.describe.only('Payment testing', () => {
     await loginPage.loginButton.click();
 
     const desktopPage = new DesktopPage(page);
-    await desktopPage.paymentButton.click();
+    await desktopPage.sideMenu.paymentButton.click();
   });
 
   test('easy payment', async ({ page }) => {

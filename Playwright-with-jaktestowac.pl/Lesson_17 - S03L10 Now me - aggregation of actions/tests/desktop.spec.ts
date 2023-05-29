@@ -25,16 +25,17 @@ test.describe('Desktop testing', () => {
     const transferTitle = 'Zwrot kasy';
     const expectedTransferReceiver = 'Chuck Demobankowy';
 
-    // Act
-    await desktopPage.transferReceiver.selectOption(receiverId);
-    await desktopPage.transferAmount.fill(transferAmount);
-    await desktopPage.transferTitle.fill(transferTitle);
-    await desktopPage.buttonMake.click();
-    await desktopPage.buttonClose.click();
+    // Act - Refactoring
+    await desktopPage.quickPayment(receiverId, transferAmount, transferTitle);
+
+    // await desktopPage.transferReceiver.selectOption(receiverId);
+    // await desktopPage.transferAmount.fill(transferAmount);
+    // await desktopPage.transferTitle.fill(transferTitle);
+    // await desktopPage.buttonMake.click();
+    // await desktopPage.buttonClose.click();
 
     // Assert
-    await expect(desktopPage.messageText)
-    .toHaveText(`Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`);
+    await expect(desktopPage.messageText).toHaveText(`Przelew wykonany! ${expectedTransferReceiver} - ${transferAmount},00PLN - ${transferTitle}`);
   });
 
   test('successful mobile phone top-up', async ({ page }) => {
@@ -43,12 +44,14 @@ test.describe('Desktop testing', () => {
     const topUpAmount = '90';
     const expectMessage = `Doładowanie wykonane! ${topUpAmount},00PLN na numer ${phoneNumber}`;
 
-    // Act
-    await desktopPage.topupReceiver.selectOption(phoneNumber);
-    await desktopPage.topupAmount.fill(topUpAmount);
-    await desktopPage.topupAgreement.click();
-    await desktopPage.topUpPhone.click();
-    await desktopPage.buttonClose.click();
+    // Act - Refactoring
+    await desktopPage.phoneTopUp(phoneNumber, topUpAmount);
+
+    // await desktopPage.topupReceiver.selectOption(phoneNumber);
+    // await desktopPage.topupAmount.fill(topUpAmount);
+    // await desktopPage.topupAgreement.click();
+    // await desktopPage.topUpPhone.click();
+    // await desktopPage.buttonClose.click();
 
     // Assert
     await expect(desktopPage.messageText).toHaveText(expectMessage);
@@ -61,12 +64,14 @@ test.describe('Desktop testing', () => {
     const initialBalance = await desktopPage.moneyValue.innerText();
     const expectBalance = Number(initialBalance) - Number(topUpAmount);
 
-    // Act
-    await desktopPage.topupReceiver.selectOption(phoneNumber);
-    await desktopPage.topupAmount.fill(topUpAmount);
-    await desktopPage.topupAgreement.click();
-    await desktopPage.topUpPhone.click();
-    await desktopPage.buttonClose.click();
+    // Act - Refactoring
+    await desktopPage.phoneTopUp(phoneNumber, topUpAmount);
+
+    // await desktopPage.topupReceiver.selectOption(phoneNumber);
+    // await desktopPage.topupAmount.fill(topUpAmount);
+    // await desktopPage.topupAgreement.click();
+    // await desktopPage.topUpPhone.click();
+    // await desktopPage.buttonClose.click();
 
     // Assert
     await expect(desktopPage.moneyValue).toHaveText(`${expectBalance}`);

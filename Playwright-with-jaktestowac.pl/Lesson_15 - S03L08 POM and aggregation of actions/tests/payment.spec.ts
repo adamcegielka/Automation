@@ -4,21 +4,22 @@ import { PaymentPage } from '../test-pages/payment.page';
 import { LoginPage } from '../test-pages/login.page';
 import { DesktopPage } from '../test-pages/desktop.page';
 
-test.describe.only('Payment testing', () => {
+test.describe('Payment testing', () => {
+  let paymentPage: PaymentPage;
 
   test.beforeEach(async ({ page }) => {
     const userId = loginData.userId;
     const userPassword = loginData.userPassword;
 
     await page.goto('/');
-    // Page Object Model - POM - Change from LoginPage to PaymentPage
+    
     const loginPage = new LoginPage(page);
-    await loginPage.loginInput.fill(userId);
-    await loginPage.passwordInput.fill(userPassword);
-    await loginPage.loginButton.click();
+    await loginPage.login(userId, userPassword);
 
     const desktopPage = new DesktopPage(page);
     await desktopPage.sideMenu.paymentButton.click();
+
+    paymentPage = new PaymentPage(page);
   });
 
   test('easy payment', async ({ page }) => {
@@ -29,7 +30,6 @@ test.describe.only('Payment testing', () => {
     const expectMessage = `Przelew wykonany! ${transferAmount},00PLN dla Smok Wawelski`;
 
     // Act
-    const paymentPage = new PaymentPage(page);
     await paymentPage.transferReceiver.fill(transferReceiverName);
     await paymentPage.formAccount.fill(numerAccount);
     await paymentPage.formAmount.fill(transferAmount);

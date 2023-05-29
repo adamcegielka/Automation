@@ -4,8 +4,11 @@ import { LoginPage } from '../test-pages/login.page';
 import { DesktopPage } from '../test-pages/desktop.page';
 
 test.describe('User login to Demobank', () => {
+  let loginPage: LoginPage;
+
   test.beforeEach(async ({ page }) => {
     await page.goto('/');
+    loginPage = new LoginPage(page);
   });
 
   test('successful login with too short username', async ({ page }) => {
@@ -15,11 +18,8 @@ test.describe('User login to Demobank', () => {
     const userPassword = loginData.userPassword;
     const expectedUserName = 'Jan Demobankowy';
 
-    // Act // Page Object Model - POM
-    const loginPage = new LoginPage(page);
-    await loginPage.loginInput.fill(userId);
-    await loginPage.passwordInput.fill(userPassword);
-    await loginPage.loginButton.click();
+    // Act
+     await loginPage.login(userId, userPassword);
 
     // Assert
     const desktopPage = new DesktopPage(page);
@@ -31,12 +31,11 @@ test.describe('User login to Demobank', () => {
     const shortUserId = 'testy';
     const expectErrorMessage = 'identyfikator ma min. 8 znaków';
 
-    // Act - POM
-    const loginPage = new LoginPage(page);
+    // Act
     await loginPage.loginInput.fill(shortUserId);
     await loginPage.passwordInput.click();
 
-    // Assert - POM
+    // Assert
     await expect(loginPage.loginError).toHaveText(expectErrorMessage);
   });
 
@@ -46,13 +45,12 @@ test.describe('User login to Demobank', () => {
     const userPasswordShort = '87654';
     const expectErrorMessage = 'hasło ma min. 8 znaków';
 
-    // Act - POM
-    const loginPage = new LoginPage(page);
+    // Act
     await loginPage.loginInput.fill(userId);
     await loginPage.passwordInput.fill(userPasswordShort);
     await loginPage.passwordInput.blur();
 
-    // Assert - POM
+    // Assert
     await expect(loginPage.passwordShort).toHaveText(expectErrorMessage);
   });
 });

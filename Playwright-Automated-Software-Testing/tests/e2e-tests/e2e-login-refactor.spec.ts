@@ -1,22 +1,26 @@
 import { test, expect } from '@playwright/test';
 import { loginRegistrationData } from '../e2e-data/e2e-login.data';
 import { LoginPage } from '../../page-objects/LoginPage';
+import { HomePage } from '../../page-objects/HomePage';
 
 test.describe.only('Login and Logout Flow', () => {
   let loginPage: LoginPage;
+  let homePage: HomePage;
 
   // Before Hook
   test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
-    await loginPage.visit();
+    homePage = new HomePage(page);
+
+    await homePage.visit();
   });
 
   // Negative Login
   test('negative login', async ({ page }) => {
     const userLoginIncorrect = loginRegistrationData.userLoginIncorrect;
     const userPasswordIncorrect = loginRegistrationData.userPasswordIncorrect;
-
-    await page.click('#signin_button');
+    
+    await homePage.clickOnSignIn();
     await loginPage.login(userLoginIncorrect, userPasswordIncorrect);
 
     await loginPage.asserErrorMessage();
@@ -28,9 +32,8 @@ test.describe.only('Login and Logout Flow', () => {
     const userPassword = loginRegistrationData.userPassword;
     const goBack = 'http://zero.webappsecurity.com/index.html';
     const verifyActivityMessage = 'Show Transactions';
-    const verifyTitleHomePage = 'Zero - Personal Banking - Loans - Credit Cards';
 
-    await page.click('#signin_button');
+    await homePage.clickOnSignIn();
     await loginPage.login(userLogin, userPassword);
 
     // ERROR - CLICKING THE BACK BUTTON
@@ -40,8 +43,8 @@ test.describe.only('Login and Logout Flow', () => {
     const accountActivity = await page.locator ('.board-header');
     await expect(accountActivity).toContainText(verifyActivityMessage);
 
-    await page.getByText('username').click();
-    await page.getByRole('link', { name: 'Logout' }).click();
-    await expect(page).toHaveTitle(verifyTitleHomePage);
+    await loginPage.logout();
+
+    await homePage.assertHomePage();
   });
 });

@@ -6,6 +6,8 @@ export class LoginPage {
   readonly userNameInput: Locator;
   readonly userPasswordInput: Locator;
   readonly submitButton: Locator;
+  readonly usernameButton: Locator;
+  readonly logoutButton: Locator;
   readonly errorMessage: Locator;
 
   // Init selector using constructor
@@ -14,6 +16,10 @@ export class LoginPage {
     this.userNameInput = page.locator('#user_login');
     this.userPasswordInput = page.locator('#user_password');
     this.submitButton = page.locator('text=Sign in');
+
+    this.usernameButton = page.getByText('username');
+    this.logoutButton = page.getByRole('link', { name: 'Logout' });
+
     this.errorMessage = page.locator('.alert-error');
   }
 
@@ -23,15 +29,15 @@ export class LoginPage {
     await this.submitButton.click();
   }
 
+  async logout() {
+    await this.usernameButton.click();
+    await this.logoutButton.click();
+  }
+
   // assertions
   async asserErrorMessage() {
     await expect(this.errorMessage).toContainText(
       'Login and/or password are wrong.'
     );
-  }
-
-  // Define login page methods
-  async visit() {
-    await this.page.goto('http://zero.webappsecurity.com/');
   }
 }

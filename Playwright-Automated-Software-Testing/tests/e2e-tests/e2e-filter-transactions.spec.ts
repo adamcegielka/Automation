@@ -19,6 +19,7 @@ test.describe('Filter transactions', () => {
     await page.click('#transfer_funds_tab');
   });
 
+  // selection by value: <option value="2">Checking</option>
   test('verify the results for each accont', async ({ page }) => {
     await page.click('#account_activity_tab');
     await page.selectOption('#aa_accountId', '2');

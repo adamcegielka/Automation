@@ -3,7 +3,7 @@ import { HomePage } from '../../page-objects/HomePage';
 import { loginRegistrationData } from '../e2e-data/e2e-login.data';
 import { FeedbackPage } from '../../page-objects/FeedbackPage';
 
-test.describe.only('Feedback Form', () => {
+test.describe('Feedback Form', () => {
   let homePage: HomePage;
   let feedbackPage: FeedbackPage;
 

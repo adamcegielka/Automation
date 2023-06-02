@@ -9,7 +9,7 @@ export class LoginPage {
   readonly usernameButton: Locator;
   readonly logoutButton: Locator;
   readonly errorMessage: Locator;
-  readonly loginForm: Locator;    // Snapshot
+  readonly loginForm: Locator; // Snapshot
 
   // Init selector using constructor
   constructor(page: Page) {
@@ -22,7 +22,7 @@ export class LoginPage {
     this.logoutButton = page.getByRole('link', { name: 'Logout' });
 
     this.errorMessage = page.locator('.alert-error');
-    this.loginForm = page.locator('#login_form');    // Snapshot
+    this.loginForm = page.locator('#login_form'); // Snapshot
   }
 
   async login(userName: string, userPassword: string) {
@@ -45,10 +45,10 @@ export class LoginPage {
 
   // Snapshots:
   async snapshotLoginForm() {
-    await expect(this.loginForm.screenshot()).toMatchSnapshot('login-form.png');
+    await expect(await this.loginForm.screenshot()).toMatchSnapshot('login-form.png');
   }
 
-  async snapchotErrorMessage(){
-    await expect(this.errorMessage.screenshot()).toMatchSnapshot('login-error.png')
+  async snapchotErrorMessage() {
+    await expect(await this.errorMessage.screenshot()).toMatchSnapshot('login-error.png');
   }
 }

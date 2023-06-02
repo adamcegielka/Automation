@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 
 // SCREENSHOTS
 // https://playwright.dev/docs/screenshots

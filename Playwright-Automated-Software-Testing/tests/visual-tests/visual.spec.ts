@@ -12,3 +12,5 @@ test.describe('Visual Regression Testing', () => {
     expect(await pageElement?.screenshot()).toMatchSnapshot('page-title.png');
   });
 });
+
+// --update-snapshots

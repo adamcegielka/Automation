@@ -23,7 +23,10 @@
     "tests:e2e:webkit": "playwright test --config=e2e.config.ts --project=Webkit",
     "tests:visual:chromium": "playwright test --config=visual.config.ts --project=Chromium",
     "tests:visual:firefox": "playwright test --config=visual.config.ts --project=Firefox",
-    "tests:visual:webkit": "playwright test --config=visual.config.ts --project=Webkit"
+    "tests:visual:webkit": "playwright test --config=visual.config.ts --project=Webkit",
+    "tests:visual:chromium:update": "playwright test --config=visual.config.ts --project=Chromium --update-snapshots",
+    "tests:visual:firefox:update": "playwright test --config=visual.config.ts --project=Firefox --update-snapshots",
+    "tests:visual:webkit:update": "playwright test --config=visual.config.ts --project=Webkit --update-snapshots"
   },
   "author": "Adam Cegielka",
   "license": "ISC",

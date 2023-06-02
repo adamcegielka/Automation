@@ -1,5 +1,5 @@
 // Custom Function - file: helpers.ts
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { assertTitle, loadHomePage } from '../helpers';
 
 test('Custom Helpers', async ({ page }) => {

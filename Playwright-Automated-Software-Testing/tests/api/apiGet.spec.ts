@@ -55,7 +55,7 @@ test.describe.parallel('API Testing', () => {
     console.log(responseBody);
   });
 
-  test.only('Get detail <resource>', async ({ request }) => {
+  test('Get detail <resource>', async ({ request }) => {
     const response = await request.get(`${baseUrl}/unknown/2`);
     const responseBody = JSON.parse(await response.text());
 

@@ -24,4 +24,17 @@ test.describe.parallel('API Test - POST', () => {
     expect(responsBody.id).toBe(333);
     expect(responsBody.createdAt).toBeTruthy();
   });
+
+  test.only('create new user 539', async ({ request }) => {
+    const respons = await request.post(`${baseUrl}/users`, {
+      data:{
+        id: 539,
+        name: 'morpheus',
+        job: 'leader'
+      },
+    });
+    const responsBody = JSON.parse(await respons.text());
+    expect(respons.status()).toBe(201);
+    console.log(responsBody);
+  })
 });

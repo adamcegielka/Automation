@@ -54,4 +54,16 @@ test.describe.parallel('API Testing', () => {
     expect(response.status()).toBe(200);
     console.log(responseBody);
   });
+
+  test.only('Get detail <resource>', async ({ request }) => {
+    const response = await request.get(`${baseUrl}/unknown/2`);
+    const responseBody = JSON.parse(await response.text());
+
+    expect(response.status()).toBe(200);
+    expect(responseBody.data.id).toBe(2);
+    expect(responseBody.data.name).toBe('fuchsia rose');
+    expect(responseBody.data.pantone_value).toBe('17-2031');
+    expect(responseBody.data.year).toBeTruthy();
+    console.log(responseBody);
+  });
 });

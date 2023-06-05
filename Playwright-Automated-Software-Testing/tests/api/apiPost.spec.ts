@@ -53,10 +53,10 @@ test.describe.parallel('API Test - POST', () => {
     expect(respons.status()).toBe(200);
     expect(responsBody.id).toBe(4);
     expect(responsBody.token).toBe('QpwL5tke4Pnpja7X4');
-    console.log(responsBody);     // { id: 4, token: 'QpwL5tke4Pnpja7X4' }
+    console.log(responsBody); // { id: 4, token: 'QpwL5tke4Pnpja7X4' }
   });
 
-  test('register - unsuccessful', async ( { request }) => {
+  test('register - unsuccessful', async ({ request }) => {
     const respons = await request.post(`${baseUrl}/register`, {
       data: {
         email: 'sydney@fife',
@@ -66,6 +66,20 @@ test.describe.parallel('API Test - POST', () => {
 
     expect(respons.status()).toBe(400);
     expect(responsBody.error).toBe('Missing password');
+    console.log(responsBody);
+  });
+
+  test('login - successful', async ({ request }) => {
+    const respons = await request.post(`${baseUrl}/login`, {
+      data: {
+        email: 'eve.holt@reqres.in',
+        password: 'cityslicka',
+      },
+    });
+    const responsBody = JSON.parse(await respons.text());
+
+    expect(respons.status()).toBe(200);
+    expect(responsBody.token).toBe('QpwL5tke4Pnpja7X4');
     console.log(responsBody);
   });
 });

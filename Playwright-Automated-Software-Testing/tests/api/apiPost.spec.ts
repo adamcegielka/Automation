@@ -38,7 +38,7 @@ test.describe.parallel('API Test - POST', () => {
     console.log(responsBody);
   });
 
-  test.only('register - successful', async ({ request }) => {
+  test('register - successful', async ({ request }) => {
     const respons = await request.post(`${baseUrl}/register`, {
       data: {
         email: 'eve.holt@reqres.in',
@@ -47,6 +47,8 @@ test.describe.parallel('API Test - POST', () => {
     });
     const responsBody = JSON.parse(await respons.text());
     expect(respons.status()).toBe(200);
+    expect(responsBody.id).toBe(4);
+    expect(responsBody.token).toBe('QpwL5tke4Pnpja7X4');
     console.log(responsBody);     // { id: 4, token: 'QpwL5tke4Pnpja7X4' }
   });
 });

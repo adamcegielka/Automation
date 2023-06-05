@@ -39,8 +39,16 @@ test.describe.parallel('API Testing', () => {
     console.log(responseBody);
   });
 
-  test('List <resource>',async ({ request }) => {
+  test('List <resource>', async ({ request }) => {
     const response = await request.get(`${baseUrl}/unknown`);
+    const responseBody = JSON.parse(await response.text());
+
+    expect(response.status()).toBe(200);
+    console.log(responseBody);
+  });
+
+  test('Single <resource>', async ({ request }) => {
+    const response = await request.get(`${baseUrl}/unknown/2`);
     const responseBody = JSON.parse(await response.text());
 
     expect(response.status()).toBe(200);

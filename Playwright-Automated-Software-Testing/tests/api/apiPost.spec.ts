@@ -82,4 +82,17 @@ test.describe.parallel('API Test - POST', () => {
     expect(responsBody.token).toBe('QpwL5tke4Pnpja7X4');
     console.log(responsBody);
   });
+
+  test('login - unsuccessful', async ({ request }) => {
+    const respons = await request.post(`${baseUrl}/login`, {
+      data: {
+        email: 'peter@klaven',
+      },
+    });
+    const responsBody = JSON.parse(await respons.text());
+
+    expect(respons.status()).toBe(400);
+    expect(responsBody.error).toBe('Missing password');
+    console.log(responsBody);
+  });
 });

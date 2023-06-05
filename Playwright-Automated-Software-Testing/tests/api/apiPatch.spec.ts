@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('API Testing - PATCH', () => {
   const baseUrl = 'https://reqres.in/api';
 
-  test.only('PATCH - update user', async ({ request }) => {
+  test('PATCH - update user', async ({ request }) => {
     const respons = await request.patch(`${baseUrl}/users/2`, {
       data: {
         name: 'morpheus',

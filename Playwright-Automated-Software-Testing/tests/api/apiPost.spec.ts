@@ -10,6 +10,7 @@ test.describe.parallel('API Test - POST', () => {
       },
     });
     const responsBody = JSON.parse(await respons.text());
+
     expect(respons.status()).toBe(201);
     console.log(responsBody);
   });
@@ -21,6 +22,7 @@ test.describe.parallel('API Test - POST', () => {
       },
     });
     const responsBody = JSON.parse(await respons.text());
+
     expect(responsBody.id).toBe(333);
     expect(responsBody.createdAt).toBeTruthy();
   });
@@ -34,6 +36,7 @@ test.describe.parallel('API Test - POST', () => {
       },
     });
     const responsBody = JSON.parse(await respons.text());
+
     expect(respons.status()).toBe(201);
     console.log(responsBody);
   });
@@ -46,9 +49,23 @@ test.describe.parallel('API Test - POST', () => {
       },
     });
     const responsBody = JSON.parse(await respons.text());
+
     expect(respons.status()).toBe(200);
     expect(responsBody.id).toBe(4);
     expect(responsBody.token).toBe('QpwL5tke4Pnpja7X4');
     console.log(responsBody);     // { id: 4, token: 'QpwL5tke4Pnpja7X4' }
+  });
+
+  test('register - unsuccessful', async ( { request }) => {
+    const respons = await request.post(`${baseUrl}/register`, {
+      data: {
+        email: 'sydney@fife',
+      },
+    });
+    const responsBody = JSON.parse(await respons.text());
+
+    expect(respons.status()).toBe(400);
+    expect(responsBody.error).toBe('Missing password');
+    console.log(responsBody);
   });
 });

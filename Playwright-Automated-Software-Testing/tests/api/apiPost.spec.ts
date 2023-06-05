@@ -6,7 +6,7 @@ test.describe.parallel('API Test - POST', () => {
   test('create new user 222', async ({ request }) => {
     const respons = await request.post(`${baseUrl}/users`, {
       data: {
-        id: 222
+        id: 222,
       },
     });
     const responsBody = JSON.parse(await respons.text());
@@ -17,7 +17,7 @@ test.describe.parallel('API Test - POST', () => {
   test('create new user 333', async ({ request }) => {
     const respons = await request.post(`${baseUrl}/users`, {
       data: {
-        id: 333
+        id: 333,
       },
     });
     const responsBody = JSON.parse(await respons.text());
@@ -25,16 +25,28 @@ test.describe.parallel('API Test - POST', () => {
     expect(responsBody.createdAt).toBeTruthy();
   });
 
-  test.only('create new user 539', async ({ request }) => {
+  test('create new user 539', async ({ request }) => {
     const respons = await request.post(`${baseUrl}/users`, {
-      data:{
+      data: {
         id: 539,
         name: 'morpheus',
-        job: 'leader'
+        job: 'leader',
       },
     });
     const responsBody = JSON.parse(await respons.text());
     expect(respons.status()).toBe(201);
     console.log(responsBody);
-  })
+  });
+
+  test.only('register - successful', async ({ request }) => {
+    const respons = await request.post(`${baseUrl}/register`, {
+      data: {
+        email: 'eve.holt@reqres.in',
+        password: 'pistol',
+      },
+    });
+    const responsBody = JSON.parse(await respons.text());
+    expect(respons.status()).toBe(200);
+    console.log(responsBody);     // { id: 4, token: 'QpwL5tke4Pnpja7X4' }
+  });
 });

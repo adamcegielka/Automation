@@ -38,4 +38,12 @@ test.describe.parallel('API Testing', () => {
     expect(responseBody.data.email).toBeTruthy();
     console.log(responseBody);
   });
+
+  test('List <resource>',async ({ request }) => {
+    const response = await request.get(`${baseUrl}/unknown`);
+    const responseBody = JSON.parse(await response.text());
+
+    expect(response.status()).toBe(200);
+    console.log(responseBody);
+  });
 });

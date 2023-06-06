@@ -4,6 +4,7 @@ import { PlaywrightTestConfig } from '@playwright/test'
 
 const config: PlaywrightTestConfig = {
     timeout: 60000,
+    testDir: 'tests/tips',
     retries: 0,
     use: {
         headless: true,

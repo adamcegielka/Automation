@@ -9,7 +9,7 @@ test.use({
   ...devices['iPhone 13 Pro'],
 });
 
-test.only('test', async ({ page }) => {
+test('test', async ({ page }) => {
   await page.goto('https://www.wikipedia.org/');
   await page.locator('#js-link-box-pl').click();
   await page.getByRole('button', { name: 'Szukaj' }).click();

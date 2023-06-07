@@ -5,7 +5,7 @@ test.describe('Tips & Tricks Section', () => {
   // PARAMETRIZED TESTS
   const people = ['Adam', 'Ewa', 'Jan', 'Ola', 'Darek'];
   for (const name of people) {
-    test.only(`running test for ${name}`, async ({ page }) => {
+    test(`running test for ${name}`, async ({ page }) => {
         await page.goto('http://zero.webappsecurity.com/');
         await page.type('#searchTerm', `${name}`);
         await page.waitForTimeout(3000);

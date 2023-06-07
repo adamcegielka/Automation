@@ -2,8 +2,8 @@ import { test } from '@playwright/test';
 
 test.describe('Tips & Tricks Section', () => {
 
-  test('generate costumized screenshots', async ({ page }) => {
-    await page.goto('https://www.twitter.com/');
+  test('emulate browser language and timezone', async ({ page }) => {
+    await page.goto('https://www.example.com/');
   });
 });
 

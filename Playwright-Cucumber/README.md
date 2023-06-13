@@ -9,7 +9,7 @@
 - Websites to test:
     - [Example Domain](https://www.example.com/)
     - [Zero - Personal Banking](http://zero.webappsecurity.com/)
-    - Software [VSCode](https://code.visualstudio.com/)
+- Software [VSCode](https://code.visualstudio.com/)
 
 <br>
 
@@ -31,7 +31,7 @@
 
 :small_orange_diamond:  new project with **Playwright** `npm init --yes`  
 :small_orange_diamond:  instaling Playwright `npm install playwright chai prettier @cucumber/cucumber cucumber-html-reporter`   
-:small_orange_diamond:  creation of `.prettierrc` file
+:small_orange_diamond:  creation of `.prettierrc` file  
 :small_orange_diamond:  installing all the browsers `npx playwright install`  
 
 ## Updating Playwright
@@ -44,5 +44,5 @@
 ## Chrome DevTools
 
 :small_orange_diamond:  open DevTools <kbd>F12</kbd> or right click: `Inspect`    
-:small_orange_diamond:  checking the selector <kbd>CTRL</kbd> + <kbd>F</kbd>
+:small_orange_diamond:  checking the selector <kbd>CTRL</kbd> + <kbd>F</kbd>  
 :small_orange_diamond:  testing CSS selectors in Console: `$$('selector')`  

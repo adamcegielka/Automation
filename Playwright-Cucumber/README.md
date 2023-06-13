@@ -6,9 +6,8 @@
 
 # BDD with Cucumber and Playwright
 
-- Websites to test:
-    - [Example Domain](https://www.example.com/)
-    - [Zero - Personal Banking](http://zero.webappsecurity.com/)
+- Websites used for testing:
+    - [Swag Labs](https://www.saucedemo.com/)
 - Software [VSCode](https://code.visualstudio.com/)
 
 <br>

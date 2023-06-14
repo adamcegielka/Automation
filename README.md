@@ -10,7 +10,8 @@ Here is my learning material in automated testing from various courses and webin
 
 - [Playwright-with-jaktestowac.pl](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright) - My exercises in automatic test lessons from [jaktestowac.pl](https://jaktestowac.pl/)
 - [Playwright-Automated-Software-Testing](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright-Automated-Software-Testing) - My learning and gaining skills in automated testing with Playwright
-- [Playwright-Cucumber](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright-Cucumber) - Gaining experience in BDD testing with Cucumber  
+- [Playwright-Cucumber](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright-Cucumber) - Gaining experience in BDD testing with Cucumber
+- [Playwright-Rest-API-Testing](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright-Rest-API-Testing) - My study of Rest API testing at Playwright  
   <br>
 
 ![Selenium](https://img.shields.io/badge/-Selenium-3776AB?style=flat&logo=Selenium&logoColor=white)  

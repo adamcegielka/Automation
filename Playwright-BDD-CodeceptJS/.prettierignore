@@ -1,6 +1,7 @@
-playwright-report
 package-lock.json
 package.json
+codecept.conf.ts
 tsconfig.json
+steps.d.ts
+steps_file.ts
 README.md
-test-results

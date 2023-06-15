@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test"
 
-test.only('create user post', async ({ request }) => {
+test('create user post', async ({ request }) => {
     const response = await request.post('/posts', {
         data: {
             title: 'New Post',

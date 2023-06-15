@@ -1,6 +1,6 @@
 [![Playwright.dev](https://img.shields.io/badge/Documentation-Playwright-45ba4b.svg?logo=playwright)](https://playwright.dev/docs/intro)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-CodeceptJS-45ba4b.svg?logo=github)](https://stackoverflow.com/questions/tagged/playwright)
-[![CodeceptJS](https://img.shields.io/badge/Discourse-CodeceptJS-ffd700.svg)](https://codecept.io/)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-CodeceptJS-45ba4b.svg?logo=github)](https://github.com/codeceptjs/CodeceptJS)
+[![CodeceptJS](https://img.shields.io/badge/Discourse-CodeceptJS-ffd700.svg)](https://codecept.discourse.group/)
 [![CodeceptJS](https://img.shields.io/badge/Testing%20framework-CodeceptJS-ffd700.svg)](https://codecept.io/)
 <br>
 

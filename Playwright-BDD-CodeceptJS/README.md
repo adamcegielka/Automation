@@ -8,6 +8,7 @@
 
 - Websites used for testing:
   - [Example Domain](https://www.example.com/)
+  - [Guru99 Bank](http://demo.guru99.com/v4/)
 - Software [VSCode](https://code.visualstudio.com/)
 
 <br>

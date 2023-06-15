@@ -1,5 +1,3 @@
-Feature('example');
+Feature('example')
 
-Scenario('test something',  ({ I }) => {
-
-});
+Scenario('test something', ({ I }) => {})

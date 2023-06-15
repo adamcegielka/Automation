@@ -35,6 +35,7 @@
 :small_orange_diamond: creation of `.gitignore` file  
 :small_orange_diamond: creation of `.prettierrc` file   
 :small_orange_diamond: creation of `.prettierignore` file   
+:small_orange_diamond: running formatting with Prettier `npx prettier --write .` file
 
 ## Updating Playwright
 

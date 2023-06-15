@@ -18,4 +18,12 @@ test('retrieve user post', async ({ request }) => {
     console.log(await response.json());
 })
 
+test('cannot retrieve animals', async ({ request }) => {
+    const response = await request.get('/animals')
+    expect(response.ok()).toBeFalsy()
+    expect(response.status()).toBe(404)
+    expect(response.statusText()).toEqual("Not Found")
+})
+
+
 // https://jsonplaceholder.typicode.com/

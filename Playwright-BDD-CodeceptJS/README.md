@@ -37,6 +37,12 @@
 :small_orange_diamond: creation of `.prettierignore` file   
 :small_orange_diamond: running formatting with Prettier `npx prettier --write .` file
 
+## Updating CodeceptJS
+
+:small_orange_diamond: check if CodeceptJS should be updated: `npx codeceptjs --version`  
+:small_orange_diamond: update CodeceptJS: `npm update codeceptjs` or `npm update codeceptjs@latest`    
+:small_orange_diamond: update Puppeteer: `npm update codeceptjs puppeteer`  
+
 ## Updating Playwright
 
 :small_orange_diamond: check if Playwright should be updated: `npm outdated @playwright/test`  

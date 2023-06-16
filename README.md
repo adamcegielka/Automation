@@ -2,9 +2,6 @@
 
 Here is my learning material in automated testing from various courses and webinars  
 <br>
-![Cypress](https://img.shields.io/badge/-Cypress-3776AB?style=flat&logo=Cypress&logoColor=white)  
-[Cypress](https://github.com/adamcegielka/learn-test-automation/tree/main/Cypress) My exercises in automatic test lessons from udemy [Cypress od podstaw - Automatyzacja testów](https://www.udemy.com/course/cypress-od-podstaw/)  
-<br>
 
 ![Playwright](https://img.shields.io/badge/-Playwright-3776AB?style=flat&logo=Playwright&logoColor=white)
 
@@ -13,7 +10,11 @@ Here is my learning material in automated testing from various courses and webin
 - [Playwright-BDD-CodeceptJS](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright-BDD-CodeceptJS) - Gaining experience in BDD testing with CodeceptJS
 - [Playwright-Cucumber](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright-Cucumber) - Gaining experience in BDD testing with Cucumber
 - [Playwright-Rest-API-Testing](https://github.com/adamcegielka/learn-test-automation/tree/main/Playwright-Rest-API-Testing) - My study of Rest API testing at Playwright  
-  <br>
+<br>
+
+![Cypress](https://img.shields.io/badge/-Cypress-3776AB?style=flat&logo=Cypress&logoColor=white)  
+[Cypress](https://github.com/adamcegielka/learn-test-automation/tree/main/Cypress) My exercises in automatic test lessons from udemy [Cypress od podstaw - Automatyzacja testów](https://www.udemy.com/course/cypress-od-podstaw/)  
+<br>
 
 ![Selenium](https://img.shields.io/badge/-Selenium-3776AB?style=flat&logo=Selenium&logoColor=white)  
 [Selenium-Udem](https://github.com/adamcegielka/learn-test-automation/tree/main/Selenium-Udem) My exercises in automated testing from the course from Udemy [Kurs Selenium Java od podstaw](https://www.udemy.com/course/kurs-selenium-java/)  

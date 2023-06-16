@@ -14,7 +14,7 @@ Scenario('Login to Bank - Negative',  ({ I }) => {
     I.see('Log in to ZeroBank');
     I.seeElement('#login_form');
     I.fillField('#user_login', 'Some User Name');
-    I.fillField('user_password', 'incorrect-password');
+    I.fillField('#user_password', 'incorrect-password');
     I.click('.btn-primary');
     I.seeElement('.alert-error');
 });

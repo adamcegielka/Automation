@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "codeceptjs run",
+    "test:verbose": "codeceptjs run --verbose",
     "gpo": "codeceptjs gpo"
   },
   "keywords": [],

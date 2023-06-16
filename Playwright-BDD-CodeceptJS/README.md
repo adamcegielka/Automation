@@ -48,6 +48,7 @@
 ## Commands CodeceptJS
 
 :small_orange_diamond: flag to see complete NodeJS stacktrace: `npx codeceptjs run --verbose`  
+:small_orange_diamond: running a specific test: `npx codeceptjs run example_test.js`  
 
 ## Updating Playwright
 

@@ -1,0 +1,23 @@
+{
+  "name": "playwright-bdd-codeceptjs",
+  "version": "1.0.0",
+  "description": "Another lesson in automated testing at Playwright with Codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run",
+    "gpo": "codeceptjs gpo"
+  },
+  "keywords": [],
+  "author": "Adam Cegielka",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.4.1",
+    "playwright": "^1.35.1",
+    "prettier": "^2.8.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}

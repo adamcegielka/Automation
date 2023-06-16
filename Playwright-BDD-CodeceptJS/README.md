@@ -45,6 +45,10 @@
 :small_orange_diamond: update CodeceptJS: `npm update codeceptjs` or `npm update codeceptjs@latest`    
 :small_orange_diamond: update Puppeteer: `npm update codeceptjs puppeteer`  
 
+## Commands CodeceptJS
+
+:small_orange_diamond: flag to see complete NodeJS stacktrace: `npx codeceptjs run --verbose`  
+
 ## Updating Playwright
 
 :small_orange_diamond: check if Playwright should be updated: `npm outdated @playwright/test`  

@@ -30,7 +30,8 @@
 ## Installation steps performed in Playwright
 
 :small_orange_diamond: new project with **Playwright** `npm init`  
-:small_orange_diamond: instaling Playwright in e2e (cd e2e) `npm install @playwright/test`  
+:small_orange_diamond: instaling Playwright in e2e (cd e2e) `npm install @playwright/test`   
+:small_orange_diamond: instaling `npm install playwright`  
 :small_orange_diamond: creation of `.gitignore` file    
 :small_orange_diamond: creation of `playwright.config.js` file  
 

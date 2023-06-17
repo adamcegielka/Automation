@@ -38,7 +38,9 @@
 :small_orange_diamond: instaling **Cucumber** `npm install @cucumber/cucumber`  
 :small_orange_diamond: instaling **TypeScript** `npm install typescript`  
 :small_orange_diamond: instaling **TypeScript Jason** `npx -p typescript tsc --init`    
+:small_orange_diamond: instaling `npm install ts-node`    
 :small_orange_diamond: creation of `features` folder  
+:small_orange_diamond: creation of `step-definitions` folder  
 
 ## Updating Playwright
 

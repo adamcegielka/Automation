@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --reporter=html",
-    "cucumber": "cucumber-js features/**/*.feature --require-module ts-node/reqister --require step-definitions/**/**/*.ts"
+    "cucumber": "cucumber-js features\\**\\*.feature --require-module ts-node/register --require step-definitions\\**\\*.ts"
   },
   "author": "Adam Cegielka",
   "license": "ISC",

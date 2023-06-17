@@ -33,9 +33,16 @@
 :small_orange_diamond: creation of `.gitignore` file    
 :small_orange_diamond: creation of `playwright.config.js` file  
 
+## Installation Cucumber and TypeScript
+
+:small_orange_diamond: instaling **Cucumber** `npm install @cucumber/cucumber`  
+:small_orange_diamond: instaling **TypeScript** `npm install typescript`  
+:small_orange_diamond: instaling **TypeScript Jason** `npx -p typescript tsc --init`    
+:small_orange_diamond: creation of `features` folder  
+
 ## Updating Playwright
 
-:small_orange_diamond: check if Playwright should be updated: `npm outdated @playwright/test`  
+:small_orange_diamond: check if Playwright should be updated: `npm outdated @playwright/test` 
 :small_orange_diamond: update Playwright: `npm i @playwright/test`  
 :small_orange_diamond: update browsers: `npx playwright install`  
 :small_orange_diamond: verify Playwright version: `npx @playwright/test --version`

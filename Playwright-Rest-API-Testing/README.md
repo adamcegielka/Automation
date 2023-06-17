@@ -41,6 +41,7 @@
 :small_orange_diamond: instaling `npm install ts-node`    
 :small_orange_diamond: creation of `features` folder  
 :small_orange_diamond: creation of `step-definitions` folder  
+:small_orange_diamond: creation of `setup` folder  
 
 ## Updating Playwright
 

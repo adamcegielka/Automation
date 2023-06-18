@@ -44,6 +44,10 @@
 :small_orange_diamond: creation of `features` folder  
 :small_orange_diamond: creation of `step-definitions` folder  
 :small_orange_diamond: creation of `setup` folder  
+:small_orange_diamond: instaling `npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`   
+:small_orange_diamond: creation of  `.eslintrc`  
+:small_orange_diamond: creation of  `.eslintignore`  
+ 
 
 ## Updating Playwright
 

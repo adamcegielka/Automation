@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx playwright test --reporter=html",
     "cucumber": "cucumber-js features\\**\\*.feature --require-module ts-node/register --require step-definitions\\**\\*.ts",
-    "lint": "aslint . --ext .ts"
+    "lint": "eslint . --ext .ts"
   },
   "author": "Adam Cegielka",
   "license": "ISC",

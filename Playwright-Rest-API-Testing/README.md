@@ -30,24 +30,28 @@
 ## Installation steps performed in Playwright
 
 :small_orange_diamond: new project with **Playwright** `npm init`  
-:small_orange_diamond: instaling Playwright in e2e (cd e2e) `npm install @playwright/test`   
+:small_orange_diamond: instaling Playwright in e2e (cd e2e) `npm install @playwright/test`  
 :small_orange_diamond: instaling `npm install playwright`  
-:small_orange_diamond: creation of `.gitignore` file    
-:small_orange_diamond: creation of `playwright.config.js` file  
+:small_orange_diamond: creation of `.gitignore` file  
+:small_orange_diamond: creation of `playwright.config.js` file
 
 ## Installation Cucumber and TypeScript
 
 :small_orange_diamond: instaling **Cucumber** `npm install @cucumber/cucumber`  
 :small_orange_diamond: instaling **TypeScript** `npm install typescript`  
-:small_orange_diamond: instaling **TypeScript Jason** `npx -p typescript tsc --init`    
-:small_orange_diamond: instaling `npm install ts-node`    
+:small_orange_diamond: instaling **TypeScript Jason** `npx -p typescript tsc --init`  
+:small_orange_diamond: instaling `npm install ts-node`  
 :small_orange_diamond: creation of `features` folder  
 :small_orange_diamond: creation of `step-definitions` folder  
 :small_orange_diamond: creation of `setup` folder  
-:small_orange_diamond: instaling `npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`   
-:small_orange_diamond: creation of  `.eslintrc`  
-:small_orange_diamond: creation of  `.eslintignore`  
- 
+:small_orange_diamond: instaling `npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`  
+:small_orange_diamond: creation of `.eslintrc`  
+:small_orange_diamond: creation of `.eslintignore`  
+:small_orange_diamond: instaling `npm install @babel/core`  
+:small_orange_diamond: instaling `npm install @babel/cli`  
+:small_orange_diamond: instaling `npm install @babel/preset-env`  
+:small_orange_diamond: instaling `npm install @babel/preset-typescript`  
+:small_orange_diamond: creation of `.babelrc`  
 
 ## Updating Playwright
 
@@ -59,27 +63,31 @@
 ## Useful pages
 
 ### API
+
 - [API Testing - JoanMedia - YouTube](https://www.youtube.com/watch?v=6fapvF1uYo0&list=PLYDwWPRvXB89caN5PHWDLrXJuyugu5Mg_)
 - [Playwright API Testing - Kaniel Outis - YouTube](https://www.youtube.com/watch?v=S12sspgH8es&list=PL-hNDoK1-od_HpjnFwFZnjKpIs_D-lEpn)
 - [Playwright API Testing - LetCode with Koushik - YouTube](https://www.youtube.com/watch?v=deEK0lHrC-w&t=1441s)
 
 ### Cucumber
-- [Automation using Playwright Library with Cucumber JS.](https://www.indiumsoftware.com/blog/automation-using-playwright-library-with-cucumber-js/)  
-- [Playwright - Cucumber - TS - YouTube](https://www.youtube.com/watch?v=bfWXNLqKlvA&list=PL699Xf-_ilW6KgK-S1l9ynOnBGiZl2Bsk)  
+
+- [Automation using Playwright Library with Cucumber JS.](https://www.indiumsoftware.com/blog/automation-using-playwright-library-with-cucumber-js/)
+- [Playwright - Cucumber - TS - YouTube](https://www.youtube.com/watch?v=bfWXNLqKlvA&list=PL699Xf-_ilW6KgK-S1l9ynOnBGiZl2Bsk)
 - [Cucumber and Playwright with Tally Barak](https://www.youtube.com/watch?v=PUVFmhYJNJA)
 
 ### Playwright
+
 - [Playwright.dev - YouTube](https://www.youtube.com/@Playwrightdev)
 - [Playwright - jaktestowac.pl - YouTube](https://www.youtube.com/watch?v=JqEp2cjnzAo&list=PLfKhn9AcZ-cD2TCB__K7NP5XARaCzZYn7)
 - [Playwright - Zwinna Panda - YouTube](https://www.youtube.com/watch?v=1-u5JWFWPgw&list=PLvFBbkSgL1u7Bco8ewGnWeZpjRH-bHC_7)
 - [Playwright framework - Typescript - YouTube](https://www.youtube.com/watch?v=orWd3b6zqHI&list=PL699Xf-_ilW4FuazWjbnRm0PPCltz25pz)
-- [Playwright Test Runner - 2022 - YouTube](https://www.youtube.com/watch?v=zY-IoTYcbWs&list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD)  
+- [Playwright Test Runner - 2022 - YouTube](https://www.youtube.com/watch?v=zY-IoTYcbWs&list=PL699Xf-_ilW7EyC6lMuU4jelKemmS6KgD)
 - [Playwright Tutorial - YouTube](https://www.youtube.com/watch?v=bxvqsUKSWMk&list=PL-hNDoK1-od9MXsp90HfSXeCVMQiXYI6Z)
 - [Playwright Tips & Tricks - YouTube](https://www.youtube.com/watch?v=fS-_87kmgCo&list=PLYDwWPRvXB8-Zw6wzPKs9ij1m-RMhfAx_)
 
 ### Others
+
 - [TypeScript for Test Automation- YouTube](https://www.youtube.com/watch?v=k0hSJdTfXNM&list=PL699Xf-_ilW5VXRsJwBJLmDGrsrYxBjQT)
-- [Page Object Model - Protractor - JavaScript - YouTube](https://www.youtube.com/watch?v=AdIu6LpjbsM&list=PL699Xf-_ilW6xWr1zQeD6Q29ffQE1jgrb)  
+- [Page Object Model - Protractor - JavaScript - YouTube](https://www.youtube.com/watch?v=AdIu6LpjbsM&list=PL699Xf-_ilW6xWr1zQeD6Q29ffQE1jgrb)
 - [XPath Tutorial - YouTube](https://www.youtube.com/watch?v=ppnDfNuSjro&list=PL699Xf-_ilW4sqC76skEN5vHT0M1YNXoU)
 - [XPath Tutorial - YouTube](https://www.youtube.com/watch?v=XyBxEnyBb0A&list=PLYDwWPRvXB89vqqHebPnJ3Krn5osOEr2z)
 - [Software Testing Tools & Tricks - YouTube](https://www.youtube.com/watch?v=rQf-t3og_GE&list=PLYDwWPRvXB89_89g9xDIfdeUf9XmbrF-T)

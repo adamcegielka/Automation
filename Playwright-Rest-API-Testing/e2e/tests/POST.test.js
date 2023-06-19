@@ -18,4 +18,23 @@ test('create user post', async ({ request }) => {
     console.log(await response.json())
 })
 
+test('create new user post', async ({ request }) => {
+    const response = await request.post('/posts', {
+        data: {
+            userId: 34,
+            id: 101,
+            title: 'Another New Post',
+            body: 'This is the second new post'
+        }
+    })
+    expect(response.status()).toBe(201)
+    expect(await response.json()).toEqual(expect.objectContaining({
+        "userId": 34,
+        "id": 101,
+        "title": "Another New Post",
+        "body": "This is the second new post"
+    }))
+    console.log(await response.json())
+})
+
 // https://jsonplaceholder.typicode.com/

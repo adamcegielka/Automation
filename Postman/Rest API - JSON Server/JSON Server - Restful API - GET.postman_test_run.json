@@ -1,0 +1,445 @@
+{
+	"id": "5c4ed0be-3fdc-49e4-8b26-ac966a9e65f6",
+	"name": "JSON Server - Restful API - GET",
+	"timestamp": "2023-06-20T13:10:50.416Z",
+	"collection_id": "24777190-bc15a07e-9f32-4334-ab1e-5e7643472fb4",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 37,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-20T13:10:48.954Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "77959c65-3099-4ab8-8915-dc4a2772f193",
+			"name": "GET -  posts",
+			"url": "localhost:3000/posts",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check titles": true,
+				"Check authors": true,
+				"Check one author": true,
+				"Check one title": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check titles": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check authors": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check one author": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check one title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check titles": true,
+					"Check authors": true,
+					"Check one author": true,
+					"Check one title": true
+				}
+			]
+		},
+		{
+			"id": "50bb02ef-9ca3-4ecc-9ace-7a7ac289b2cc",
+			"name": "GET - posts/1",
+			"url": "http://localhost:3000/posts/1",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check title": true,
+				"Check author": true,
+				"Check title test2": true,
+				"Check author test2": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check title": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check author": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check title test2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check author test2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check title": true,
+					"Check author": true,
+					"Check title test2": true,
+					"Check author test2": true
+				}
+			]
+		},
+		{
+			"id": "45f162de-e5ef-467c-9e50-c3391df8714e",
+			"name": "GET -  profile",
+			"url": "localhost:3000/profile",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check name": true,
+				"Check surname": true,
+				"Check company": true,
+				"Check email": true,
+				"Check age": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check surname": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check company": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check age": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check name": true,
+					"Check surname": true,
+					"Check company": true,
+					"Check email": true,
+					"Check age": true
+				}
+			]
+		},
+		{
+			"id": "6a2281c1-ff4d-4329-8195-c35c6460f4d7",
+			"name": "Filtering a post using the title",
+			"url": "localhost:3000/posts?title=Natural History&author=Elisa Fernandez",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check title": true,
+				"Check author": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check title": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check author": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check title": true,
+					"Check author": true
+				}
+			]
+		},
+		{
+			"id": "dd806860-7575-4b87-a1e6-f0de2ee4340a",
+			"name": "Filtering a post using id",
+			"url": "localhost:3000/posts?id=1&id=2",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check authors": true,
+				"Check titles": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check authors": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check titles": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check authors": true,
+					"Check titles": true
+				}
+			]
+		},
+		{
+			"id": "7d546b4a-912e-4f8a-a5a9-32309c092675",
+			"name": "Use . to access deep properties",
+			"url": "localhost:3000/comments?author.name=Carloman Jacques",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true,
+				"Check body test 2": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body test 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true,
+					"Check body test 2": true
+				}
+			]
+		},
+		{
+			"id": "bc0131b1-8f48-4513-aaed-a79445dd2193",
+			"name": "GET -  comments",
+			"url": "localhost:3000/comments",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true,
+				"Check 2 body": true,
+				"Check 2 body next test with Json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check 2 body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check 2 body next test with Json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true,
+					"Check 2 body": true,
+					"Check 2 body next test with Json": true
+				}
+			]
+		},
+		{
+			"id": "d5ae6645-d112-4db6-bbdf-171d27db33c9",
+			"name": "GET -  comments/1",
+			"url": "localhost:3000/comments/1",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check postId": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check postId": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check postId": true
+				}
+			]
+		},
+		{
+			"id": "35a788d1-dc13-44a4-8de1-c8ebe92a5bbf",
+			"name": "GET -  comments filtering by postId",
+			"url": "localhost:3000/comments/?postId=1",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 302,
+	"collection": {
+		"requests": [
+			{
+				"id": "77959c65-3099-4ab8-8915-dc4a2772f193",
+				"method": "GET"
+			},
+			{
+				"id": "50bb02ef-9ca3-4ecc-9ace-7a7ac289b2cc",
+				"method": "GET"
+			},
+			{
+				"id": "45f162de-e5ef-467c-9e50-c3391df8714e",
+				"method": "GET"
+			},
+			{
+				"id": "6a2281c1-ff4d-4329-8195-c35c6460f4d7",
+				"method": "GET"
+			},
+			{
+				"id": "dd806860-7575-4b87-a1e6-f0de2ee4340a",
+				"method": "GET"
+			},
+			{
+				"id": "7d546b4a-912e-4f8a-a5a9-32309c092675",
+				"method": "GET"
+			},
+			{
+				"id": "bc0131b1-8f48-4513-aaed-a79445dd2193",
+				"method": "GET"
+			},
+			{
+				"id": "d5ae6645-d112-4db6-bbdf-171d27db33c9",
+				"method": "GET"
+			},
+			{
+				"id": "35a788d1-dc13-44a4-8de1-c8ebe92a5bbf",
+				"method": "GET"
+			}
+		]
+	}
+}

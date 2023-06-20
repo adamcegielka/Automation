@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "bc15a07e-9f32-4334-ab1e-5e7643472fb4",
+		"name": "JSON Server - Restful API - GET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24777190"
+	},
+	"item": [
+		{
+			"name": "GET -  posts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check titles\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Animals\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Natural History\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Good book\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check authors\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds Grundeis\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Annelinde Wuttke\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Elisa Fernandez\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Carloman Jacques\");\r",
+							"});\r",
+							"\r",
+							"// Closer inspection of the values:\r",
+							"\r",
+							"pm.test(\"Check one author\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].author).to.eql(\"Birds Grundeis\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check one title\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[2].title).to.eql(\"Natural History\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - posts/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check title\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check author\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds Grundeis\");\r",
+							"});\r",
+							"\r",
+							"// Closer inspection of the values:\r",
+							"\r",
+							"pm.test(\"Check title test2\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.title).to.eql(\"Birds\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check author test2\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.author).to.eql(\"Birds Grundeis\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET -  profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check name\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Wiktor\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check surname\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Pommier\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check company\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Ingenico Group EURL\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check email\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"contact@ingenicogroupeurl.fr\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check age\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(39);\r",
+							"});\r",
+							"\r",
+							"// Closer inspection of the values:\r",
+							"\r",
+							"pm.test(\"Check name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(\"Wiktor\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check surname\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.surname).to.eql(\"Pommier\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtering a post using the title",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check title\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Natural History\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check author\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Elisa Fernandez\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts?title=Natural History&author=Elisa Fernandez",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "Natural History"
+						},
+						{
+							"key": "author",
+							"value": "Elisa Fernandez"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filtering a post using id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check authors\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds Grundeis\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Annelinde Wuttke\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check titles\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Animals\");\r",
+							"});\r",
+							"\r",
+							"// Closer inspection of the values:\r",
+							"\r",
+							"pm.test(\"Check authors\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].author).to.eql(\"Birds Grundeis\");\r",
+							"    pm.expect(jsonData[1].author).to.eql(\"Annelinde Wuttke\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check titles\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].title).to.eql(\"Birds\");\r",
+							"    pm.expect(jsonData[1].title).to.eql(\"Animals\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/posts?id=1&id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Use . to access deep properties",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The quick, brown fox jumps over a lazy dog.\");\r",
+							"});\r",
+							"\r",
+							"// Closer inspection of the values:\r",
+							"\r",
+							"pm.test(\"Check body test 2\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[1].body).to.eql(\"The quick, brown fox jumps over a lazy dog.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/comments?author.name=Carloman Jacques",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments"
+					],
+					"query": [
+						{
+							"key": "author.name",
+							"value": "Carloman Jacques"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET -  comments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The quick, brown fox jumps over a lazy dog.\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check 2 body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The European languages are members of the same family\");\r",
+							"});\r",
+							"\r",
+							"// Closer inspection of the values:\r",
+							"\r",
+							"pm.test(\"Check 2 body next test with Json\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[2].body).to.eql(\"The European languages are members of the same family\");\r",
+							"    pm.expect(jsonData[3].body).to.eql(\"The European languages are members of the same family\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET -  comments/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check postId\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(4);\r",
+							"    pm.expect(pm.response.text()).to.include(\"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/comments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET -  comments filtering by postId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].body).to.eql(\"The quick, brown fox jumps over a lazy dog.\");\r",
+							"    pm.expect(jsonData[0].postId).to.eql(1);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/comments/?postId=1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments",
+						""
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}

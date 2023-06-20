@@ -20,6 +20,7 @@ Here is my learning material in automated testing from various courses and webin
 [Selenium-Udem](https://github.com/adamcegielka/learn-test-automation/tree/main/Selenium-Udem) My exercises in automated testing from the course from Udemy [Kurs Selenium Java od podstaw](https://www.udemy.com/course/kurs-selenium-java/)  
 <br>
 
-![Postman](https://img.shields.io/badge/-Postman-3776AB?style=flat&logo=Postman&logoColor=white)  
-- [Postman-RestAPI-JSON-Server](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman-RestAPI-JSON-Server) Testing with JSON Server Repository
+![Postman](https://img.shields.io/badge/-Postman-3776AB?style=flat&logo=Postman&logoColor=white) ![Rest API](https://img.shields.io/badge/-RestAPI-3776AB?style=flat&logo=restapi&logoColor=white)
+- [Postman-RestAPI-JSON-Server](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman-RestAPI-JSON-Server) Testing with JSON Server Repository 
+- [RESTfulAPI-with-Node.js](https://github.com/adamcegielka/learn-test-automation/tree/main/RESTfulAPI-with-Node.js) Testing with Academind on YouTube
 - [Postman](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman) My skills in Rest API testing

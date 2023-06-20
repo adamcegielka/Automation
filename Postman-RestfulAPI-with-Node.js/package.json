@@ -1,0 +1,19 @@
+{
+  "name": "rest-api-with-node",
+  "version": "1.0.0",
+  "description": "Learning RESTful API with Node.js - Shop API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "Adam Cegielka",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

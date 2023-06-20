@@ -20,10 +20,6 @@ Here is my learning material in automated testing from various courses and webin
 [Selenium-Udem](https://github.com/adamcegielka/learn-test-automation/tree/main/Selenium-Udem) My exercises in automated testing from the course from Udemy [Kurs Selenium Java od podstaw](https://www.udemy.com/course/kurs-selenium-java/)  
 <br>
 
-![BDD](https://img.shields.io/badge/-BDD-3776AB?style=flat&logo=BDD&logoColor=white)  
-[Tests BDD](https://github.com/adamcegielka/learn-test-automation/tree/main/Tests%20BDD) My testing exercises in the BDD methodology  
-<br>
-
 ![Postman](https://img.shields.io/badge/-Postman-3776AB?style=flat&logo=Postman&logoColor=white)  
 - [Postman-RestAPI-JSON-Server](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman-RestAPI-JSON-Server) Testing with JSON Server Repository
 - [Postman](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman) My skills in Rest API testing

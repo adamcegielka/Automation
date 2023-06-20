@@ -8,3 +8,11 @@
 
 - Testing with [JSON Server](https://github.com/typicode/json-server#getting-started) Repository
 - Software [Postman](https://www.postman.com)
+
+<br>
+
+## Start of work:
+
+:small_orange_diamond:  Install JSON Server: `npm install -g json-server`  
+:small_orange_diamond:  Start JSON Servert: `json-server --watch db.json`  
+:small_orange_diamond:  Local host: ` http://localhost:3000/`  

@@ -25,4 +25,5 @@ Here is my learning material in automated testing from various courses and webin
 <br>
 
 ![Postman](https://img.shields.io/badge/-Postman-3776AB?style=flat&logo=Postman&logoColor=white)  
-[Postman](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman) My skills in Rest API testing
+- [Postman-RestAPI-JSON-Server](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman) My skills in Rest API testing
+- [Postman](https://github.com/adamcegielka/learn-test-automation/tree/main/Postman) My skills in Rest API testing

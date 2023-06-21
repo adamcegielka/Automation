@@ -1,0 +1,207 @@
+{
+	"id": "141ad7a9-da32-45c8-9e02-ee00e2d2733e",
+	"name": "JSON Server - Restful API - PATCH",
+	"timestamp": "2023-06-21T11:05:57.513Z",
+	"collection_id": "24777190-96fbc892-edc5-4fc8-a231-3e1622f8bc2e",
+	"folder_id": 0,
+	"environment_id": "24777190-ede0995c-8fc5-4ce6-8110-454ec1ff3fe9",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-21T11:05:56.438Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "f98180fd-eda4-4dae-90e5-8fe33ac6a0e2",
+			"name": "PATCH -  posts/title",
+			"url": "localhost:3000/posts/5",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check response": true
+				}
+			]
+		},
+		{
+			"id": "027775fc-cfd5-4c64-96d4-0892aa84eab8",
+			"name": "PATCH -  posts/author",
+			"url": "localhost:3000/posts/5",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check response": true
+				}
+			]
+		},
+		{
+			"id": "3a16fca3-fe30-43b9-92dc-9812405dbec9",
+			"name": "PATCH -  profile",
+			"url": "localhost:3000/profile",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check response": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check response": true
+				}
+			]
+		},
+		{
+			"id": "72019402-5215-410f-beb8-817c2473c439",
+			"name": "PATCH -  comments body",
+			"url": "localhost:3000/comments/2",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true
+				}
+			]
+		},
+		{
+			"id": "ee62c992-1b84-4fac-8681-e2342f34b6f3",
+			"name": "PATCH -  comments postId",
+			"url": "localhost:3000/comments/3",
+			"time": 172,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check postId": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check postId": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				172
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check postId": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 300,
+	"collection": {
+		"requests": [
+			{
+				"id": "f98180fd-eda4-4dae-90e5-8fe33ac6a0e2",
+				"method": "PATCH"
+			},
+			{
+				"id": "027775fc-cfd5-4c64-96d4-0892aa84eab8",
+				"method": "PATCH"
+			},
+			{
+				"id": "3a16fca3-fe30-43b9-92dc-9812405dbec9",
+				"method": "PATCH"
+			},
+			{
+				"id": "72019402-5215-410f-beb8-817c2473c439",
+				"method": "PATCH"
+			},
+			{
+				"id": "ee62c992-1b84-4fac-8681-e2342f34b6f3",
+				"method": "PATCH"
+			}
+		]
+	}
+}

@@ -1,0 +1,390 @@
+{
+	"id": "8eb6bc3b-b0d2-4cac-9871-c35a9f116c5b",
+	"name": "JSON Server - Restful API - POST",
+	"timestamp": "2023-06-21T10:59:39.215Z",
+	"collection_id": "24777190-6621ae52-d050-4e44-8bb9-b42387d73bdf",
+	"folder_id": 0,
+	"environment_id": "24777190-ede0995c-8fc5-4ce6-8110-454ec1ff3fe9",
+	"totalPass": 28,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-21T10:59:37.960Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "63c53db8-21e8-4347-886e-61eadf356bdd",
+			"name": "POST -  posts",
+			"url": "localhost:3000/posts",
+			"time": 35,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful request code": true,
+				"Check response": true,
+				"Check author": true,
+				"Check title": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check author": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Successful request code": true,
+					"Check response": true,
+					"Check author": true,
+					"Check title": true
+				}
+			]
+		},
+		{
+			"id": "332016ab-33f7-4808-aa5a-a821ef92b852",
+			"name": "POST -  posts Random",
+			"url": "localhost:3000/posts",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful request code": true,
+				"Check response": true,
+				"Check author": true,
+				"Check title": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check author": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Successful request code": true,
+					"Check response": true,
+					"Check author": true,
+					"Check title": true
+				}
+			]
+		},
+		{
+			"id": "da292bc7-119a-4356-a986-ded9a5fc556c",
+			"name": "DELETE - posts Random",
+			"url": "localhost:3000/posts/29",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful request code": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Successful request code": true
+				}
+			]
+		},
+		{
+			"id": "88a9b7aa-c708-4e68-8ec6-34d25d0d30b1",
+			"name": "POST -  profile",
+			"url": "localhost:3000/profile",
+			"time": 18,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful request code": true,
+				"Check reponse": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check reponse": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Successful request code": true,
+					"Check reponse": true
+				}
+			]
+		},
+		{
+			"id": "d3d31e1a-cd65-45c0-a31c-9316e71349fe",
+			"name": "POST -  profile - adding another",
+			"url": "localhost:3000/profile",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful request code": true,
+				"Check name": true,
+				"Check surname": true,
+				"Check company": true,
+				"Checkg email": true,
+				"Check age": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check surname": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check company": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Checkg email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check age": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Successful request code": true,
+					"Check name": true,
+					"Check surname": true,
+					"Check company": true,
+					"Checkg email": true,
+					"Check age": true
+				}
+			]
+		},
+		{
+			"id": "15689c47-f172-4701-b2b4-2c5fee0d3f53",
+			"name": "POST -  profile Random",
+			"url": "localhost:3000/profile",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful request code": true,
+				"Check reponse": true,
+				"Check name": true,
+				"Check surname": true,
+				"Check company": true,
+				"Check email": true,
+				"Check phone": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check reponse": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check surname": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check company": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check phone": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Successful request code": true,
+					"Check reponse": true,
+					"Check name": true,
+					"Check surname": true,
+					"Check company": true,
+					"Check email": true,
+					"Check phone": true
+				}
+			]
+		},
+		{
+			"id": "d7ed0dd4-fc02-414b-a296-3285c926d9f0",
+			"name": "POST -  comments",
+			"url": "localhost:3000/comments",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful request code": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Successful request code": true,
+					"Check body": true
+				}
+			]
+		},
+		{
+			"id": "ba676a60-1957-468f-b846-e84fc2aad595",
+			"name": "POST -  comments new",
+			"url": "localhost:3000/comments",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful request code": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Successful request code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Successful request code": true,
+					"Check body": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 230,
+	"collection": {
+		"requests": [
+			{
+				"id": "63c53db8-21e8-4347-886e-61eadf356bdd",
+				"method": "POST"
+			},
+			{
+				"id": "332016ab-33f7-4808-aa5a-a821ef92b852",
+				"method": "POST"
+			},
+			{
+				"id": "da292bc7-119a-4356-a986-ded9a5fc556c",
+				"method": "DELETE"
+			},
+			{
+				"id": "88a9b7aa-c708-4e68-8ec6-34d25d0d30b1",
+				"method": "POST"
+			},
+			{
+				"id": "d3d31e1a-cd65-45c0-a31c-9316e71349fe",
+				"method": "POST"
+			},
+			{
+				"id": "15689c47-f172-4701-b2b4-2c5fee0d3f53",
+				"method": "POST"
+			},
+			{
+				"id": "d7ed0dd4-fc02-414b-a296-3285c926d9f0",
+				"method": "POST"
+			},
+			{
+				"id": "ba676a60-1957-468f-b846-e84fc2aad595",
+				"method": "POST"
+			}
+		]
+	}
+}

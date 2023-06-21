@@ -1,0 +1,446 @@
+{
+	"info": {
+		"_postman_id": "6621ae52-d050-4e44-8bb9-b42387d73bdf",
+		"name": "JSON Server - Restful API - POST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24777190"
+	},
+	"item": [
+		{
+			"name": "POST -  posts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// pm.globals.get(\"author\");\r",
+							"// pm.globals.get(\"title\");\r",
+							"// pm.environment.get(\"author\");\r",
+							"// pm.environment.get(\"title\");\r",
+							"\r",
+							"pm.test(\"Check response\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"author\"));\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"title\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check author\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.author).to.eql(pm.environment.get(\"author\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check title\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.title).to.eql(pm.environment.get(\"title\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"{{title}}\",\r\n    \"author\": \"{{author}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST -  posts Random",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check response\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"randomName\"));\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"randomTitle\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check author\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.author).to.eql(pm.environment.get(\"randomName\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check title\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.title).to.eql(pm.environment.get(\"randomTitle\"));\r",
+							"});\r",
+							"\r",
+							"// pm.globals.set(\"postIdToDelete\", pm.response.json().id);\r",
+							"\r",
+							"pm.collectionVariables.set(\"postIdToDelete\", pm.response.json().id);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// pm.variables.replaceIn('{{$randomJobTitle}}');\r",
+							"\r",
+							"pm.environment.set(\"randomTitle\", pm.variables.replaceIn('{{$randomJobTitle}}'));\r",
+							"\r",
+							"// pm.variables.replaceIn('{{$randomFullName}}');\r",
+							"\r",
+							"pm.environment.set(\"randomName\", pm.variables.replaceIn('{{$randomFullName}}'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"title\": \"{{$randomJobTitle}}\",\r\n//     \"author\": \"{{$randomFullName}}\"\r\n// }\r\n\r\n{\r\n    \"title\": \"{{randomTitle}}\",\r\n    \"author\": \"{{randomName}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - posts Random",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/posts/{{postIdToDelete}}",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"{{postIdToDelete}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST -  profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check reponse\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Ulrika\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Ostenfeld\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Fritidsresor\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"fritidsresor.com\");\r",
+							"    pm.expect(pm.response.text()).to.include(49);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ulrika\",\r\n    \"surname\": \"Ostenfeld\",\r\n    \"company\": \"Fritidsresor\",\r\n    \"email\": \"fritidsresor.com\",\r\n    \"age\": 49\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST -  profile - adding another",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check name\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Leopold\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check surname\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Wiggo\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check company\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Ericsson Holding AB\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Checkg email\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"kontakt@ericssonholdingab.com\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check age\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(58);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Leopold\",\r\n    \"surname\": \"Wiggo\",\r\n    \"company\": \"Ericsson Holding AB\",\r\n    \"email\": \"kontakt@ericssonholdingab.com\",\r\n    \"age\": 58\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST -  profile Random",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check reponse\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"randomFirstName\"));\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"randomSurname\"));\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"randomCompany\"));\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"randomEmail\"));\r",
+							"    pm.expect(pm.response.text()).to.include(pm.environment.get(\"randomPhone\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.name).to.eql(pm.environment.get(\"randomFirstName\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check surname\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.surname).to.eql(pm.environment.get(\"randomSurname\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check company\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.company).to.eql(pm.environment.get(\"randomCompany\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check email\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.email).to.eql(pm.environment.get(\"randomEmail\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Check phone\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.phone).to.eql(pm.environment.get(\"randomPhone\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"randomFirstName\", pm.variables.replaceIn('{{$randomFirstName}}'));\r",
+							"pm.environment.set(\"randomSurname\", pm.variables.replaceIn('{{$randomLastName}}'));\r",
+							"pm.environment.set(\"randomCompany\", pm.variables.replaceIn('{{$randomCompanyName}}'));\r",
+							"pm.environment.set(\"randomEmail\", pm.variables.replaceIn('{{$randomEmail}}'));\r",
+							"pm.environment.set(\"randomPhone\", pm.variables.replaceIn('{{$randomPhoneNumber}}'));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"name\": \"{{$randomFirstName}}\",\r\n//     \"surname\": \"{{$randomLastName}}\",\r\n//     \"company\": \"{{$randomCompanyName}}\",\r\n//     \"email\": \"{{$randomEmail}}\",\r\n//     \"phone\": \"{{$randomPhoneNumber}}\"\r\n// }\r\n\r\n{\r\n    \"name\": \"{{randomFirstName}}\",\r\n    \"surname\": \"{{randomSurname}}\",\r\n    \"company\": \"{{randomCompany}}\",\r\n    \"email\": \"{{randomEmail}}\",\r\n    \"phone\": \"{{randomPhone}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST -  comments",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The European languages are members of the same family\");\r",
+							"    pm.expect(pm.response.text()).to.include(1);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"The European languages are members of the same family\",\r\n    \"postId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST -  comments new",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"The European languages are members of the same family\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"The European languages are members of the same family\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/comments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Successful request code\", function () {",
+					"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202]);",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "postIdToDelete",
+			"value": ""
+		}
+	]
+}

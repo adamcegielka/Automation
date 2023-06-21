@@ -1,22 +1,22 @@
 {
-	"id": "5c4ed0be-3fdc-49e4-8b26-ac966a9e65f6",
+	"id": "f499befe-edc6-4852-ae8e-74755d5e53e0",
 	"name": "JSON Server - Restful API - GET",
-	"timestamp": "2023-06-20T13:10:50.416Z",
+	"timestamp": "2023-06-21T11:36:29.070Z",
 	"collection_id": "24777190-bc15a07e-9f32-4334-ab1e-5e7643472fb4",
 	"folder_id": 0,
-	"environment_id": "0",
+	"environment_id": "24777190-ede0995c-8fc5-4ce6-8110-454ec1ff3fe9",
 	"totalPass": 37,
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2023-06-20T13:10:48.954Z",
+	"startedAt": "2023-06-21T11:36:27.422Z",
 	"totalFail": 0,
 	"results": [
 		{
 			"id": "77959c65-3099-4ab8-8915-dc4a2772f193",
 			"name": "GET -  posts",
 			"url": "localhost:3000/posts",
-			"time": 43,
+			"time": 47,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -51,7 +51,7 @@
 				}
 			},
 			"times": [
-				43
+				47
 			],
 			"allTests": [
 				{
@@ -67,7 +67,7 @@
 			"id": "50bb02ef-9ca3-4ecc-9ace-7a7ac289b2cc",
 			"name": "GET - posts/1",
 			"url": "http://localhost:3000/posts/1",
-			"time": 33,
+			"time": 30,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -102,7 +102,7 @@
 				}
 			},
 			"times": [
-				33
+				30
 			],
 			"allTests": [
 				{
@@ -175,7 +175,7 @@
 			"id": "6a2281c1-ff4d-4329-8195-c35c6460f4d7",
 			"name": "Filtering a post using the title",
 			"url": "localhost:3000/posts?title=Natural History&author=Elisa Fernandez",
-			"time": 33,
+			"time": 31,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -200,7 +200,7 @@
 				}
 			},
 			"times": [
-				33
+				31
 			],
 			"allTests": [
 				{
@@ -214,7 +214,7 @@
 			"id": "dd806860-7575-4b87-a1e6-f0de2ee4340a",
 			"name": "Filtering a post using id",
 			"url": "localhost:3000/posts?id=1&id=2",
-			"time": 33,
+			"time": 30,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -239,7 +239,7 @@
 				}
 			},
 			"times": [
-				33
+				30
 			],
 			"allTests": [
 				{
@@ -253,7 +253,7 @@
 			"id": "7d546b4a-912e-4f8a-a5a9-32309c092675",
 			"name": "Use . to access deep properties",
 			"url": "localhost:3000/comments?author.name=Carloman Jacques",
-			"time": 33,
+			"time": 32,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -278,7 +278,7 @@
 				}
 			},
 			"times": [
-				33
+				32
 			],
 			"allTests": [
 				{
@@ -292,7 +292,7 @@
 			"id": "bc0131b1-8f48-4513-aaed-a79445dd2193",
 			"name": "GET -  comments",
 			"url": "localhost:3000/comments",
-			"time": 30,
+			"time": 85,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -322,7 +322,7 @@
 				}
 			},
 			"times": [
-				30
+				85
 			],
 			"allTests": [
 				{
@@ -335,9 +335,9 @@
 		},
 		{
 			"id": "d5ae6645-d112-4db6-bbdf-171d27db33c9",
-			"name": "GET -  comments/1",
-			"url": "localhost:3000/comments/1",
-			"time": 33,
+			"name": "GET -  comments/3",
+			"url": "localhost:3000/comments/3",
+			"time": 34,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -357,7 +357,7 @@
 				}
 			},
 			"times": [
-				33
+				34
 			],
 			"allTests": [
 				{
@@ -370,7 +370,7 @@
 			"id": "35a788d1-dc13-44a4-8de1-c8ebe92a5bbf",
 			"name": "GET -  comments filtering by postId",
 			"url": "localhost:3000/comments/?postId=1",
-			"time": 32,
+			"time": 33,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -390,7 +390,7 @@
 				}
 			},
 			"times": [
-				32
+				33
 			],
 			"allTests": [
 				{
@@ -401,7 +401,7 @@
 		}
 	],
 	"count": 1,
-	"totalTime": 302,
+	"totalTime": 354,
 	"collection": {
 		"requests": [
 			{

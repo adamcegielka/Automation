@@ -17,7 +17,7 @@
 							"    pm.expect(pm.response.text()).to.include(\"Birds\");\r",
 							"    pm.expect(pm.response.text()).to.include(\"Animals\");\r",
 							"    pm.expect(pm.response.text()).to.include(\"Natural History\");\r",
-							"    pm.expect(pm.response.text()).to.include(\"Good book\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"A new hope\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Check authors\", function () {\r",
@@ -37,7 +37,8 @@
 							"pm.test(\"Check one title\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"    pm.expect(jsonData[2].title).to.eql(\"Natural History\");\r",
-							"});"
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -47,9 +48,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/posts",
+					"raw": "{{hostDev}}:3000/posts",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
@@ -94,10 +95,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/posts/1",
+					"raw": "http://{{hostDev}}:3000/posts/1",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
@@ -116,7 +117,7 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Check name\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"Wiktor\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Ansbert\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Check surname\", function () {\r",
@@ -139,7 +140,7 @@
 							"\r",
 							"pm.test(\"Check name\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.name).to.eql(\"Wiktor\");\r",
+							"    pm.expect(jsonData.name).to.eql(\"Ansbert\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Check surname\", function () {\r",
@@ -155,9 +156,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/profile",
+					"raw": "{{hostDev}}:3000/profile",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
@@ -202,9 +203,9 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/posts?title=Natural History&author=Elisa Fernandez",
+					"raw": "{{hostDev}}:3000/posts?title=Natural History&author=Elisa Fernandez",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
@@ -263,9 +264,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/posts?id=1&id=2",
+					"raw": "{{hostDev}}:3000/posts?id=1&id=2",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
@@ -293,14 +294,14 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Check body\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"The quick, brown fox jumps over a lazy dog.\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.\");\r",
 							"});\r",
 							"\r",
 							"// Closer inspection of the values:\r",
 							"\r",
 							"pm.test(\"Check body test 2\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData[1].body).to.eql(\"The quick, brown fox jumps over a lazy dog.\");\r",
+							"    pm.expect(jsonData[1].body).to.eql(\"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -311,9 +312,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/comments?author.name=Carloman Jacques",
+					"raw": "{{hostDev}}:3000/comments?author.name=Carloman Jacques",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
@@ -360,9 +361,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/comments",
+					"raw": "{{hostDev}}:3000/comments",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
@@ -373,14 +374,14 @@
 			"response": []
 		},
 		{
-			"name": "GET -  comments/1",
+			"name": "GET -  comments/3",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
 							"pm.test(\"Check postId\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(4);\r",
+							"    pm.expect(pm.response.text()).to.include(6);\r",
 							"    pm.expect(pm.response.text()).to.include(\"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.\");\r",
 							"});"
 						],
@@ -392,14 +393,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/comments/1",
+					"raw": "{{hostDev}}:3000/comments/3",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [
 						"comments",
-						"1"
+						"3"
 					]
 				}
 			},
@@ -426,9 +427,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/comments/?postId=1",
+					"raw": "{{hostDev}}:3000/comments/?postId=1",
 					"host": [
-						"localhost"
+						"{{hostDev}}"
 					],
 					"port": "3000",
 					"path": [

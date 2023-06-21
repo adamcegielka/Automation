@@ -1,0 +1,243 @@
+{
+	"info": {
+		"_postman_id": "ec4f203d-cd29-46ed-bb46-ab8237c695e8",
+		"name": "JSON Server - Restful API - PUT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24777190"
+	},
+	"item": [
+		{
+			"name": "PUT -  posts/1 - Post update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Birds Grundeis\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Birds\",\r\n    \"author\": \"Birds Grundeis\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT -  posts/2 - Post update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Animals\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Annelinde Wuttke\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Animals\",\r\n    \"author\": \"Annelinde Wuttke\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT -  posts/3 - Post update",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Natural History\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Elisa Fernandez\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Natural History\",\r\n    \"author\": \"Elisa Fernandez\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/posts/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT -  profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Ansbert\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Pommier\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"Ingenico Group EURL\");\r",
+							"    pm.expect(pm.response.text()).to.include(\"contact@ingenicogroupeurl.fr\");\r",
+							"    pm.expect(pm.response.text()).to.include(39);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ansbert\",\r\n    \"surname\": \"Pommier\",\r\n    \"company\": \"Ingenico Group EURL\",\r\n    \"email\": \"contact@ingenicogroupeurl.fr\",\r\n    \"age\": 39\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT -  comments/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Check body\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\": \"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.\",\r\n    \"postId\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/comments/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}

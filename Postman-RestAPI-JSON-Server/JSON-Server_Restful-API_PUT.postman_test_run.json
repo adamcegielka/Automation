@@ -1,0 +1,207 @@
+{
+	"id": "e9fa330c-ee07-475e-94bb-7f92d3a2fd74",
+	"name": "JSON Server - Restful API - PUT",
+	"timestamp": "2023-06-21T11:20:33.928Z",
+	"collection_id": "24777190-ec4f203d-cd29-46ed-bb46-ab8237c695e8",
+	"folder_id": 0,
+	"environment_id": "24777190-ede0995c-8fc5-4ce6-8110-454ec1ff3fe9",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-21T11:20:32.911Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a69ec249-e72e-45c9-90bd-626814b25b7d",
+			"name": "PUT -  posts/1 - Post update",
+			"url": "localhost:3000/posts/1",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true
+				}
+			]
+		},
+		{
+			"id": "c7039945-99ec-4f3c-b44c-025cdbe2f47c",
+			"name": "PUT -  posts/2 - Post update",
+			"url": "localhost:3000/posts/2",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true
+				}
+			]
+		},
+		{
+			"id": "62883036-d505-4872-bf22-4f66f683cf29",
+			"name": "PUT -  posts/3 - Post update",
+			"url": "localhost:3000/posts/3",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true
+				}
+			]
+		},
+		{
+			"id": "ec310675-e094-48a3-87b6-ba5f283a2b64",
+			"name": "PUT -  profile",
+			"url": "localhost:3000/profile",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true
+				}
+			]
+		},
+		{
+			"id": "f61aed64-2ebe-4fc7-a0bf-7ed46e9aea9e",
+			"name": "PUT -  comments/3",
+			"url": "localhost:3000/comments/3",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Check body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Check body": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 145,
+	"collection": {
+		"requests": [
+			{
+				"id": "a69ec249-e72e-45c9-90bd-626814b25b7d",
+				"method": "PUT"
+			},
+			{
+				"id": "c7039945-99ec-4f3c-b44c-025cdbe2f47c",
+				"method": "PUT"
+			},
+			{
+				"id": "62883036-d505-4872-bf22-4f66f683cf29",
+				"method": "PUT"
+			},
+			{
+				"id": "ec310675-e094-48a3-87b6-ba5f283a2b64",
+				"method": "PUT"
+			},
+			{
+				"id": "f61aed64-2ebe-4fc7-a0bf-7ed46e9aea9e",
+				"method": "PUT"
+			}
+		]
+	}
+}

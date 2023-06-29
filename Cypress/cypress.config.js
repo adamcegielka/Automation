@@ -12,3 +12,5 @@ module.exports = defineConfig({
     viewportWidth: 1920
   },
 });
+
+// https://docs.cypress.io/guides/references/configuration

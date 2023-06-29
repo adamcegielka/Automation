@@ -1,16 +1,16 @@
 {
   "name": "cypress",
   "version": "1.0.0",
-  "description": "Testy automatyczne Cypress",
+  "description": "My first automatic tests with Cypress",
   "main": "index.js",
   "scripts": {
     "open": "npx cypress open"
   },
   "keywords": [
     "cypress",
-    "testy",
-    "automatyczne",
-    "kurs"
+    "tests",
+    "automated",
+    "course"
   ],
   "author": "Adam Cegielka",
   "license": "ISC",

@@ -7,7 +7,7 @@
     "test": "npx playwright test --reporter=html",
     "cucumber:firstTest": "cucumber-js features\\**\\*.feature --require-module ts-node/register --require step-definitions\\**\\*.ts",
     "cucumber": "npm run transpile $$ cucumber-js",
-    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist",
     "precucumber": "rimraf reports && mkdir reports && echo {} > reports/report.json",
     "lint": "eslint . --ext .ts"
   },

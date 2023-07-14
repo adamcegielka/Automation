@@ -8,7 +8,7 @@ Feature: As an API I can retrieve posts
         Given I retrieve "posts"
         And The response was successful
         And The second response is successful
-        # Then The response status code is 200
+        Then The response status code is 200
 
 
 # npm run cucumber -- --profile dev

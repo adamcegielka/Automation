@@ -17,12 +17,16 @@ Then(
 
 Then(
   /^The second response is (successful)?(unsuccessful)?$/,
-  async function (this: ScenarioWorld, successful: boolean, unsuccessful: boolean) {
-    const {
-        globalAPIResponseVariables
-    } = this;
+  async function (
+    this: ScenarioWorld,
+    successful: boolean,
+    unsuccessful: boolean
+  ) {
+    const { globalAPIResponseVariables } = this;
 
-    console.log(`The second response is ${unsuccessful? 'unsuccessful ' : 'successful '}`);
+    console.log(
+      `The second response is ${unsuccessful ? 'unsuccessful ' : 'successful '}`
+    );
 
     const response = globalAPIResponseVariables.response;
 
@@ -31,5 +35,18 @@ Then(
     } else {
       expect(response.ok()).toBeTruthy();
     }
+  }
+);
+
+Then(
+  /^The response status code is (\d*)$/,
+  async function (this: ScenarioWorld, statusCode: string) {
+    const { globalAPIResponseVariables } = this;
+
+    console.log(`The response status code is ${statusCode} `);
+
+    const response = globalAPIResponseVariables.response;
+
+    expect(response.status()).toBe(Number(statusCode));
   }
 );

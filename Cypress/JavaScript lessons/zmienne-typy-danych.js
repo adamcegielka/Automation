@@ -29,7 +29,7 @@ console.log(undef, nuull);
 
 const board = [3, "Eva", 5, "Adam"];
 console.log(board);
-// (4) [3, 'Eva', 5, 'Adam']
+// (4)[3, 'Eva', 5, 'Adam']
 console.log(board[1]);
 // Eva
 

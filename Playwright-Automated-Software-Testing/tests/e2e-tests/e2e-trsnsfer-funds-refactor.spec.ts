@@ -18,8 +18,6 @@ test.describe('Transfer Funds and Make Payments', () => {
         await homePage.visit();
         await homePage.clickOnSignIn();
         await loginPage.login(userLogin, userPassword);
-
-        // ERROR
         await page.goto(goBack);
         await page.click('#account_activity_link');
     });
@@ -35,16 +33,17 @@ test.describe('Transfer Funds and Make Payments', () => {
         await page.type('#tf_description', description);
         await page.click('#btn_submit');
 
-        // Assertion - Contains part of the text
         const boardHeader = await page.locator('h2.board-header');
         await expect(boardHeader).toContainText('Verify');
-
-        await page.click('button[type="submit"]');   // or: await page.click('#btn_submit');
+        await page.click('button[type="submit"]');
         
-        // Assertion
         const verifyMessage = await page.locator('.alert.alert-success');
         await expect(verifyMessage).toContainText('You successfully submitted your transaction.');
         const verifyAmount = await page.locator('div.board-content');
         await expect(verifyAmount).toContainText(`$ ${amount}`);
     })
 });
+
+
+
+
